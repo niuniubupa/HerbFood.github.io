@@ -1,0 +1,38 @@
+/***********推荐搜索框样式***********/
+.autocomplete-list {
+  border-radius: 15px;
+  /* 设置圆角 */
+
+  position: absolute;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+  z-index: 99;
+
+
+  text-align: left;
+  font-size: 16px;
+  top: 100%;
+}
+
+.autocomplete-list div {
+
+  padding: 10px;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.autocomplete-list {
+  width: 85%;
+}
+
+.autocomplete-list div:hover {
+
+  background-color: rgba(255, 177, 113, 0.61);
+}

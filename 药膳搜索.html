@@ -1,0 +1,3222 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <title> 食谱-药膳</title>
+    <link href="style.css" title="style" rel="stylesheet" type="text/css" />
+    <script src="scripts/jquery.min.js" type="text/javascript"></script>
+    <link id="clink" href="css/style-mango.css" title="style" rel="stylesheet" type="text/css" media="screen" />
+    <script src="scripts/jquery.masonry.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="scripts/MetroJs.lt.js" type="text/javascript"></script>
+    <script src="scripts/jquery.fancybox-1.3.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/hoverintent.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/organictabs.jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="scripts/javascript.js" type="text/javascript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/res_search.css">
+    <script src="./scripts/res_search.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <section id="container">
+
+            <!-- BEGIN HEADER -->
+            <header class="clearfix">
+                <!-- BEGIN LOGO -->
+                <a id="headerlink" href="#" title="home"><img id="logo" src="images/logo.png" alt="logo" /><span
+                        id="sitename"><img src="./images/首页菜谱/药膳.png" alt=""></span></a>
+                <!-- END LOGO -->
+
+                <!-- BEGIN NAVIGATION -->
+                <nav>
+                    <ul id="nav" class="clearfix">
+                        <!-- Menu Item 1 -->
+                        <li><a href="index.html" title="首页菜谱"><span>首页菜谱</span></a></li>
+                        <!-- Menu Item 2 -->
+                        <li class="current"><a href="药膳搜索.html" title="药膳搜索"><span>药膳搜索</span></a></li>
+                        <li><a href="药膳推荐.html" title="药膳推荐"><span>药膳推荐</span></a></li>
+                        <!-- Menu Item 3 -->
+                        <li>
+                            <a href="#" title="数据展示"><span>数据展示</span></a>
+                            <ul>
+                                <li><a href="数据展示-地图.html" title="Portfolio"><span>道地药材</span></a>
+                                </li>
+                                <li><a href="数据展示-知识图谱.html" title="Portfolio"><span>知识图谱</span></a>
+                                </li>
+                                <li><a href="数据展示-词云.html" title="Portfolio"><span>点击云图</span></a>
+                                </li>
+                                <li><a href="数据展示-药膳食材.html" title="Portfolio"><span>药膳食材</span></a></li>
+                                <li><a href="数据展示-药膳作用部位.html" title="Portfolio"><span>药膳作用部位</span></a></li>
+
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </nav>
+                <!-- END NAVIGATION -->
+            </header>
+            <!-- END HEADER -->
+
+            <!-- BEGIN CONTENT -->
+            <section id="content" class="clearfix">
+
+                <!-- BEGIN LEFT CONTENT -->
+                <section id="portfoliotile-left">
+                    <!-- BEGIN FILTER -->
+                    <div class="sousuo1" style="height: 108px;;">
+                        <div id="filter" class="clearfix  filter-left">
+
+                            <ul id="port-filter-organ">
+                                <li class="filter-current" style="background-color: #af9455;"><a style="color: white;"
+                                        href="#">作用部分</a></li>
+                                <li><a href="#">心</a></li>
+                                <li><a href="#">肝</a></li>
+                                <li><a href="#">脾</a></li>
+                                <li><a href="#">肺</a></li>
+                                <li><a href="#">肾</a></li>
+                                <li><a href="#">大肠</a></li>
+                            </ul>
+
+
+                            <ul id="port-filter">
+
+                                <li class="filter-current" style="background-color: #af9455;"><a style="color: white;"
+                                        href="#">食材</a></li>
+
+
+                                <li><a href="#">党参</a></li>
+                                <li><a href="#">淮山</a></li>
+                                <li><a href="#">姜</a></li>
+                                <li><a href="#">芡实</a></li>
+                                <li><a href="#">百合</a></li>
+                                <li><a href="#">杞子</a></li>
+                                <li><a href="#">沙参</a></li>
+                                <li><a href="#">太子参</a></li>
+                                <li><a href="#">无花果</a></li>
+                                <li><a href="#">浮小麦</a></li>
+                                <li><a href="#">陈皮</a></li>
+                                <li><a href="#">南杏</a></li>
+                                <li><a href="#">北杏</a></li>
+                                <li><a href="#">北芪</a></li>
+                                <li><a href="#">江珧柱</a></li>
+                                <li><a href="#">白果</a></li>
+                                <li><a href="#">莲子</a></li>
+                                <li><a href="#">西洋参</a></li>
+                                <li><a href="#">石斛</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div id="search" class="widget  filter-right" style=" z-index: 99">
+                            <input id="search-field" class="search-text" type="text" name="sitesearch"
+                                placeholder="请输入您要输入的内容" maxlength="1000">
+                            <div id="autocomplete-list" class="autocomplete-list"></div>
+                            <a class="search-btn" id="search-submit" href=" ">
+                                <span class="iconfont icon-search"></span>
+                            </a>
+                            <button class="return_button" onclick="goBack()">返回</button>
+                        </div><!-- end #search -->
+                    </div>
+                    <!-- END FILTER -->
+                    <!-- BEGIN TILE CONTENT -->
+                    <section class="mainpage" style="width: 1000px;">
+                        <div class="toggle-button"><span></span></div>
+                    </section>
+                    <div id="portfolio" class="clearfix centered">
+                        <!-- Tile 1 -->
+
+                        <!-- images\药膳图 -->
+
+                        <div class="tile medium 党参 淮山 心 脾 大肠 淮山党参鹌鹑汤 滋阴 养血 补气 健脾">
+                            <a href="#淮山党参鹌鹑汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">淮山党参鹌鹑汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\淮山党参鹌鹑汤-0000.png" alt="淮山党参鹌鹑汤" />
+                            </a>
+                        </div>
+                        <!-- 弹窗 -->
+                        <div class="tile-pre">
+                            <article id="淮山党参鹌鹑汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\淮山党参鹌鹑汤-0000.png" alt="淮山党参鹌鹑汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">淮山党参鹌鹑汤</h1>
+                                    <span class="projectcat redtxt">健脾益胃的功效，对脾胃虚弱所致的食欲不振，消化不良，有食辽补益作用</span>
+                                    <span class="cailiao">党参15克、淮山15克、鹌鹑2只、瘦肉250克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：有外感及实邪者；急、 慢性肝炎湿热蕴结，有黄疸者</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，热油煸香姜片，加入洗净的鹌鹑并煸炒至微黄，然后加入适量料酒炒匀倒入清水，待水开后撇去浮沫，放入去皮切块的淮山和切段的党参转小火慢炖1小时至淮山软烂，最后调入适量盐即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 五指毛桃 肝 脾 五指毛桃煲瘦肉汤 益肝 健脾 滋阴 补血">
+                            <a href="#五指毛桃煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">五指毛桃煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\五指毛桃煲鸡或煲瘦肉汤-0000.png" alt="五指毛桃煲瘦肉汤" />
+                            </a>
+                        </div>
+
+                        <div class="tile-pre">
+                            <article id="五指毛桃煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\五指毛桃煲鸡或煲瘦肉汤-0000.png"
+                                            alt="五指毛桃煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">五指毛桃煲瘦肉汤</h1>
+                                    <span class="projectcat redtxt">对于风湿对关节痛有帮助疗效</span>
+                                    <span class="cailiao">瘦肉 250克、五指毛桃 20克、姜2片</span>
+                                    <span class="projectcat redtxt">禁忌：孕妇、过敏人群、痔疮、血小板低下的人群
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，将姜片煸香后放入瘦肉块煸炒至变色倒入清水，待水开后撇去浮沫，加入洗净的五指毛桃和适量枸杞转小火慢炖1.5小时至汤汁浓郁，最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 肺 客家娘酒煲母鸡 补气 养血 润肺 开胃">
+                            <a href="#客家娘酒煲母鸡" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">客家娘酒煲母鸡</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\客家娘酒煲母鸡-0000.png" alt="客家娘酒煲母鸡" />
+                            </a>
+                        </div>
+
+                        <div class="tile-pre">
+                            <article id="客家娘酒煲母鸡" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\客家娘酒煲母鸡-0000.png" alt="客家娘酒煲母鸡" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">客家娘酒煲母鸡</h1>
+                                    <span class="projectcat redtxt">补气血健筋骨</span>
+                                    <span class="cailiao">客家娘酒650毫升、光鸡一只、姜150克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，用姜片煸香后放入洗净的母鸡块煸炒至外表变色加入适量客家娘酒炒匀，再倒入清水，待水开后撇去浮沫，放入适量红枣转小火慢炖2小时至母鸡肉烂熟，最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 山茱萸 芡实 猪肉 脾 肾 山萸肉芡实煲瘦肉 固肾 益精 健脾 温胃">
+                            <a href="#山萸肉芡实煲瘦肉 " class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">山萸肉芡实煲瘦肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\山萸肉芡实煲瘦肉-0000.png" alt="山萸肉芡实煲瘦肉" />
+                            </a>
+                        </div>
+
+                        <div class="tile-pre">
+                            <article id="山萸肉芡实煲瘦肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\山萸肉芡实煲瘦肉-0000.png" alt="山萸肉芡实煲瘦肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">山萸肉芡实煲瘦肉</h1>
+                                    <span class="projectcat redtxt">补阳虚</span>
+                                    <span class="cailiao">山茱萸100克、芡实50克、瘦肉150克</span>
+                                    <span class="projectcat redtxt">禁忌：命门的火旺出现阳强不痿的病证者，或者有湿热、小便淋涩者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，热油煸香姜片后放入瘦肉块煸炒至外表变色加入清水，待水开后撇去浮沫，放入洗净的山萸肉和芡实转小火慢炖2小时至瘦肉和山萸肉熟软，最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 百合 西洋菜 蜜桃 肺 百合西洋菜猪展生鱼汤 润肺 止咳 清热 解毒">
+                            <a href="#百合西洋菜猪展生鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">百合西洋菜猪展生鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\百合西洋菜猪展生鱼汤-0000.png" alt="百合西洋菜猪展生鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="百合西洋菜猪展生鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\百合西洋菜猪展生鱼汤-0000.png"
+                                            alt="百合西洋菜猪展生鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">百合西洋菜猪展生鱼汤</h1>
+                                    <span class="projectcat redtxt">清润理肺养阴，调肺止咳，安心宁神，补中益气</span>
+                                    <span class="cailiao">百合50克、西洋菜500克、蜜枣4个、生鱼400克、猪展300克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，热油煸香姜片后放入猪展片煸炒至香脆加入清水，待水开后放入洗净的生鱼块，再次待水开后撇去浮沫放入泡软的百合和切段的西洋菜，转小火慢炖30分钟至汤汁浓郁最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淮山 芡实 杞子 沙参 玉竹 红枣 肺 清补凉乳鸽汤 清热 解毒 滋阴 润肺">
+                            <a href="#清补凉乳鸽汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">清补凉乳鸽汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\清补凉乳鸽汤-0000.png" alt="清补凉乳鸽汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="清补凉乳鸽汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\清补凉乳鸽汤-0000.png" alt="清补凉乳鸽汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">清补凉乳鸽汤</h1>
+                                    <span class="projectcat redtxt">这些均为性味平和而滋补清泣的药材适合广东仲秋气候饮用</span>
+                                    <span class="cailiao">淮山20克、芡实20克、杞子15克、沙参15克、玉竹15克、红枣4个、乳鸽2只、瘦肉150克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        在煲汤锅中，将清水烧开，放入乳鸽并焯水去腥然后倒掉水，再次放入清水，加入适量的清补凉药材，如枸杞、莲子、百合等转小火慢炖2小时以上，直至乳鸽煮烂入味，最后加入适量冰糖调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 独角金 肾 独脚金煲瘦肉 补肾 壮阳 益精 补血">
+                            <a href="#独脚金煲瘦肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">独脚金煲瘦肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\独脚金煲瘦肉-0000.png" alt="独脚金煲瘦肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="独脚金煲瘦肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\独脚金煲瘦肉-0000.png" alt="独脚金煲瘦肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">独脚金煲瘦肉</h1>
+                                    <span class="projectcat redtxt">主治小儿疳积，或祛积开胃</span>
+                                    <span class="projectcat redtxt">禁忌：脾胃虚寒或身体虚弱者
+                                    </span>
+                                    <span class="cailiao">独脚金40克、瘦肉120克</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将独脚金药材洗净后，与瘦肉一同放入煲汤锅中加入清水，转小火慢炖2小时以上，直至肉类煮烂入味根据选择的药材，瘦肉汤可适量加入姜片和盐调味
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 太子参 无花果 蜜桃 脾 肺 太子参无花果瘦肉汤 滋阴 养血 健脾 益肺">
+                            <a href="#太子参无花果瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">太子参无花果瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\太子参无花果瘦肉汤-0000.png" alt="太子参无花果瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="太子参无花果瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\太子参无花果瘦肉汤-0000.png"
+                                            alt="太子参无花果瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">太子参无花果瘦肉汤</h1>
+                                    <span
+                                        class="projectcat redtxt">能健胃，理肠，益气润肺，经络技巧公众号提示对干咳无痰喉咙痕痒、大声说话便会咳嗽有作用，可用于脾胃虚弱或消化不良</span>
+                                    <span class="cailiao">太子参20克、无花果50克、密枣2个、瘦肉400克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：脾胃虚寒、腹痛便溏者、糖尿病患者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将太子参和无花果洗净后，与瘦肉一同放入煲汤锅中加入清水，转小火慢炖2小时以上，直至瘦肉煮烂入味最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 春砂仁 脾 春砂仁煲猪肚 清热 解毒 利湿 化痰">
+                            <a href="#春砂仁煲猪肚" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">春砂仁煲猪肚</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\春砂仁煲猪肚-0000.png" alt="春砂仁煲猪肚" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="春砂仁煲猪肚" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\春砂仁煲猪肚-0000.png" alt="春砂仁煲猪肚" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">春砂仁煲猪肚</h1>
+                                    <span class="projectcat redtxt">慢性浅表性胃炎或急性胃炎适合饮此汤，可减轻病人的难受程度</span>
+                                    <span class="cailiao">春砂仁15克、猪肚200克</span>
+                                    <span class="projectcat redtxt">禁忌：气虚肺满者、肺有伏火者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将春砂仁药材洗净后，与猪肚一同放入煲汤锅中加入清水，转小火慢炖2小时以上，直至肉类煮烂入味根据选择的药材和肉类，适量加入姜片和盐调味
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 春砂仁 脾 春砂仁煲鲫鱼汤 利水 消肿 清热 解毒">
+                            <a href="#春砂仁煲鲫鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">春砂仁煲鲫鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\春砂仁煲鲫鱼汤-0000.png" alt="春砂仁煲鲫鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="春砂仁煲鲫鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\春砂仁煲鲫鱼汤-0000.png" alt="春砂仁煲鲫鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">春砂仁煲鲫鱼汤</h1>
+                                    <span class="projectcat redtxt">用于阴虚火旺体质健脾化气</span>
+                                    <span class="cailiao">春砂仁3克、鲫鱼250克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将春砂仁药材洗净后，与鲫鱼一同放入煲汤锅中加入清水，转小火慢炖1小时以上，直至鱼肉煮烂入味最后加入适量盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 板栗 淮山 脾 肾 栗子淮山猪蹄汤 补脾 健胃 益肾 固精">
+                            <a href="#栗子淮山猪蹄汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">栗子淮山猪蹄汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\栗子淮山猪蹄汤-0000.png" alt="栗子淮山猪蹄汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="栗子淮山猪蹄汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\栗子淮山猪蹄汤-0000.png" alt="栗子淮山猪蹄汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">栗子淮山猪蹄汤</h1>
+                                    <span class="projectcat redtxt">能加强脾胃功能，健肾气，益腰膝，养肠胃，缩小便</span>
+                                    <span class="cailiao">板栗26个、淮山50克、红枣4个、猪蹄1对、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：肝炎、胆结石、高血压患者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将栗子和淮山去皮后切块备用将猪蹄洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入切好的栗子和淮山转小火慢炖2小时以上，直至猪蹄和栗子煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 芡实 薏苡仁 脾 白菜干豆腐腊鸭头汤 利水 消肿 滋阴 润燥">
+                            <a href="#白菜干豆腐腊鸭头汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">白菜干豆腐腊鸭头汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\白菜干豆腐腊鸭头汤-0000.png" alt="白菜干豆腐腊鸭头汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="白菜干豆腐腊鸭头汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\白菜干豆腐腊鸭头汤-0000.png"
+                                            alt="白菜干豆腐腊鸭头汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">白菜干豆腐腊鸭头汤</h1>
+                                    <span class="projectcat redtxt">滋阴降火，润躁养胃，利水消肿，清热养阴，去火下气，补脑益气</span>
+                                    <span class="cailiao">白菜干75克、豆腐2块、芡实25克、薏苡仁25克、蜜枣4个、陈皮适量、腊鸭头连颈2个、鸭肉300克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将白菜干泡软备用将腊鸭头、豆腐和姜片放入煲汤锅中加入清水，待水开后撇去浮沫，再放入泡软的白菜干转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 粉葛 脾 粉葛煲鱼汤 清热 解毒 利水 消肿">
+                            <a href="#粉葛煲鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">粉葛煲鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\粉葛煲鱼汤-0000.png" alt="粉葛煲鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="粉葛煲鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\粉葛煲鱼汤-0000.png" alt="粉葛煲鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">粉葛煲鱼汤</h1>
+                                    <span class="projectcat redtxt">健筋骨，行气活血，祛水利湿</span>
+                                    <span class="cailiao">粉葛750、鲮鱼500克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将粉葛洗净后切块备用将鱼洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入切好的粉葛转小火慢炖1小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 浮小麦 淮山  脾 猪笼草赤小豆横脷汤 利湿 利尿 清热 解毒">
+                            <a href="#猪笼草赤小豆横利汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">猪笼草赤小豆横脷汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\猪笼草赤小豆横利汤-0000.png" alt="猪笼草赤小豆横脷汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="猪笼草赤小豆横利汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\猪笼草赤小豆横利汤-0000.png"
+                                            alt="猪笼草赤小豆横脷汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">猪笼草赤小豆横脷汤</h1>
+                                    <span class="projectcat redtxt">清热利湿，化痰止咳，润肺阴清肺热又能退湿，疗疮，清积去痰</span>
+                                    <span class="cailiao">赤小豆20克、薏米仁15克、眉豆20克、白扁豆20克、蜜枣2个、猪横脷</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将猪笼草和赤小豆洗净后备用将横利（瘦肉）放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的猪笼草和赤小豆转小火慢炖2小时以上，直至肉类和豆类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 浮小麦 党参 淮山 桂圆 心 脾 肺 浮小麦参淮牛展汤 补气 养血 益肺 健脾">
+                            <a href="#浮小麦参淮牛展汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">浮小麦参淮牛展汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\浮小麦参淮牛展汤-0000.png" alt="浮小麦参淮牛展汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="浮小麦参淮牛展汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\浮小麦参淮牛展汤-0000.png" alt="浮小麦参淮牛展汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">浮小麦参淮牛展汤</h1>
+                                    <span class="projectcat redtxt">补益精血，健脾养胃，补脾安神，滋阴补气润血和脉</span>
+                                    <span class="cailiao">浮小麦25克、党参25克、淮山25克、桂圆25克、牛展600克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将浮小麦参和淮牛展洗净后备用将牛展放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的浮小麦参和淮牛展转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 绵茵陈 脾 绵茵陈煲鲫鱼汤 滋阴 润燥 清热 解毒">
+                            <a href="#绵茵陈煲鲫鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">绵茵陈煲鲫鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\绵茵陈煲鲫鱼汤-0000.png" alt="绵茵陈煲鲫鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="绵茵陈煲鲫鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\绵茵陈煲鲫鱼汤-0000.png" alt="绵茵陈煲鲫鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">绵茵陈煲鲫鱼汤</h1>
+                                    <span class="projectcat redtxt">对荨麻疹，手脚经常痒有去湿抗过敏作用</span>
+                                    <span class="cailiao">绵茵陈250克、鲫鱼500克</span>
+                                    <span class="projectcat redtxt">禁忌：蓄血发黄者、热甚发黄，无湿气者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将绵茵陈和陈皮洗净备用将鲫鱼洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入绵茵陈和陈皮转小火慢炖1小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 金婴子 泽泻 脾 金婴子泽泻煲瘦肉汤 利水 消肿 清热 解毒">
+                            <a href="#金婴子泽泻煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">金婴子泽泻煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\金婴子泽泻煲瘦肉汤-0000.png" alt="金婴子泽泻煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="金婴子泽泻煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\金婴子泽泻煲瘦肉汤-0000.png"
+                                            alt="金婴子泽泻煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">金婴子泽泻煲瘦肉汤</h1>
+                                    <span class="projectcat redtxt">脾胃虚，阴虚火旺，胃寒伴肝气郁结（乳腺增生，两肋疼）</span>
+                                    <span class="cailiao">金婴子12克、泽泻12克、瘦肉300克</span>
+                                    <span class="projectcat redtxt">禁忌：有实火、邪热者，中寒有痞者，忌泄泻由于火热暴注者；小便不禁及精气滑脱因于阴虚火炽而得者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将金婴子和泽泻洗净备用将瘦肉放入煲汤锅中加入清水，待水开后撇去浮沫，再放入金婴子和泽泻转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 陈皮 心 脾 陈皮炖老鸭 理气 健脾 化痰 止咳">
+                            <a href="#陈皮炖老鸭" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">陈皮炖老鸭</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\陈皮炖老鸭1-0000.png" alt="陈皮炖老鸭" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="陈皮炖老鸭" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\陈皮炖老鸭1-0000.png" alt="陈皮炖老鸭" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">陈皮炖老鸭</h1>
+                                    <span class="projectcat redtxt">理气健脾，燥湿化痰，润肺止咳，滋阴补血，健脾醒胃</span>
+                                    <span class="cailiao">陈皮10克、老鸭1只、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将陈皮洗净备用将老鸭切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入陈皮转小火慢炖2小时以上，直至鸭肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 木瓜 肺 木瓜煲老鸭 益胃 消食 滋阴 润肺">
+                            <a href="#木瓜煲老鸭" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">木瓜煲老鸭</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\木瓜煲老鸭-0000.png" alt="木瓜煲老鸭" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="木瓜煲老鸭" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\木瓜煲老鸭-0000.png" alt="木瓜煲老鸭" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">木瓜煲老鸭</h1>
+                                    <span class="projectcat redtxt">木瓜煲猪肚为女寿星汤，木瓜煲老鸭为男寿星汤，滋阴补血润而不燥</span>
+                                    <span class="cailiao">木瓜1000克、老鸭1只</span>
+                                    <span class="projectcat redtxt">禁忌：婴儿
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将木瓜去皮、去籽后切块备用将老鸭肚洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入切好的木瓜转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淮山 沙参 玉竹 心 脾 肺 淮山沙参玉竹鹅肉汤 补气 养阴 润肺 止咳">
+                            <a href="#淮山沙参玉竹鹅肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">淮山沙参玉竹鹅肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\淮山沙参玉竹鹅肉汤-0000.png" alt="淮山沙参玉竹鹅肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="淮山沙参玉竹鹅肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\淮山沙参玉竹鹅肉汤-0000.png"
+                                            alt="淮山沙参玉竹鹅肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">淮山沙参玉竹鹅肉汤</h1>
+                                    <span class="projectcat redtxt">有养胃止渴，补气生津，解五脏之热，对阴虚咳嗽，口干欲饮，防感冒，急慢性支气管炎，糖尿病有益</span>
+                                    <span class="cailiao">淮山30克、沙参15克、玉竹15克、鹅肉250克、猪瘦肉250克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将淮山、沙参和玉竹洗净备用将鹅肉洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的淮山、沙参和玉竹转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 黑豆 陈皮 肾 黑豆鲤鱼汤 补肾 益精 滋阴 养血">
+                            <a href="#黑豆鲤鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">黑豆鲤鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\黑豆鲤鱼汤-0000.png" alt="黑豆鲤鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="黑豆鲤鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\黑豆鲤鱼汤-0000.png" alt="黑豆鲤鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">黑豆鲤鱼汤</h1>
+                                    <span class="projectcat redtxt">长筋骨，悦颜容，乌须发，明目宁心延年益寿补益滋润，可治疗头发早白</span>
+                                    <span class="cailiao">黑豆60克、鲤鱼600克、陈皮半个、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将黑豆洗净泡软备用将鲤鱼洗净，去除内脏备用在煲汤锅中放入清水和黑豆，待水开后放入鲤鱼转小火慢炖2小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 百合 陈皮 脾 百合陈皮鲫鱼汤 滋阴 清热 健脾 化痰">
+                            <a href="#百合陈皮鲫鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">百合陈皮鲫鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\百合陈皮鲫鱼汤-0000.png" alt="百合陈皮鲫鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="百合陈皮鲫鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\百合陈皮鲫鱼汤-0000.png" alt="百合陈皮鲫鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">百合陈皮鲫鱼汤</h1>
+                                    <span class="projectcat redtxt">能清热开胃，健脾补益，利水肿清热解毒，健胃化气</span>
+                                    <span class="cailiao">百合80克、陈皮5克、鲫鱼2条、瘦肉200克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：气虚者、阴虚燥咳者、吐血证者、舌赤津少者、内有实热者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将百合和陈皮洗净备用将鲫鱼洗净，去除内脏备用在煲汤锅中放入清水和洗净的鲫鱼，待水开后放入百合和陈皮转小火慢炖1小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 南杏 北杏 肺 肾 南北杏煲鳄鱼肉 润肺 止咳 益肾 壮阳">
+                            <a href="#南北杏煲鳄鱼肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">南北杏煲鳄鱼肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\南北杏煲鳄鱼肉-0000.png" alt="南北杏煲鳄鱼肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="南北杏煲鳄鱼肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\南北杏煲鳄鱼肉-0000.png" alt="南北杏煲鳄鱼肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">南北杏煲鳄鱼肉</h1>
+                                    <span class="projectcat redtxt">止咳，提高呼吸道免疫力</span>
+                                    <span class="cailiao">南杏15克、北杏15克、鳄鱼肉150克</span>
+                                    <span class="projectcat redtxt">禁忌：服药时结核病患者、出血性患者、痛风患者、肝硬化患者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将南北杏或南杏、楷杷叶洗净备用将鳄鱼肉洗净备用在煲汤锅中放入清水和南北杏或南杏楷杷叶，待水开后放入鳄鱼肉转小火慢炖2小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 木瓜 肾 木瓜墨鱼汤 补肾 益精 滋阴 润燥">
+                            <a href="#木瓜墨鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">木瓜墨鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\木瓜墨鱼汤-0000.png" alt="木瓜墨鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="木瓜墨鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\木瓜墨鱼汤-0000.png" alt="木瓜墨鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">木瓜墨鱼汤</h1>
+                                    <span class="projectcat redtxt">滋肝肾，养血滋阴，有、通经、安胎、利产、止血和催乳等功效</span>
+                                    <span class="cailiao">木瓜500克、鲜墨鱼500克、排骨300克，姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：体弱胃寒、腹泻患者、孕妇
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将木瓜去皮、去籽后切块备用将墨鱼洗净，切块备用在煲汤锅中放入清水和切块的木瓜，待水开后放入墨鱼转小火慢炖1小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 北芪 糯稻根 心 脾 肾 糯稻根煲山斑鱼汤 补气 养血 益肾 健脾">
+                            <a href="#糯稻根煲山斑鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">糯稻根煲山斑鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\糯稻根煲山斑鱼汤-0000.png" alt="糯稻根煲山斑鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="糯稻根煲山斑鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\糯稻根煲山斑鱼汤-0000.png" alt="糯稻根煲山斑鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">糯稻根煲山斑鱼汤</h1>
+                                    <span class="projectcat redtxt">体格阴虚，爱出冷汗，入秋后出手汗等，有提气敛汗作用</span>
+                                    <span class="cailiao">北芪30克、糯稻根30克、山斑鱼500克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将糯稻根洗净备用将山斑鱼洗净，去除内脏备用在煲汤锅中放入清水和北芪或糯稻根，待水开后放入山斑鱼转小火慢炖2小时以上，直至鱼肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 脾 豆角干煲鲩鱼尾 清热 解毒 利水 消肿">
+                            <a href="#豆角干煲鲩鱼尾" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">豆角干煲鲩鱼尾</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\豆角干煲鲩鱼尾-0000.png" alt="豆角干煲鲩鱼尾" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="豆角干煲鲩鱼尾" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\豆角干煲鲩鱼尾-0000.png" alt="豆角干煲鲩鱼尾" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">豆角干煲鲩鱼尾</h1>
+                                    <span class="projectcat redtxt">健脾益气，消暑化湿，能辅助治疗肝阳上亢之关节痛、眼花，高血压等疾病</span>
+                                    <span class="cailiao">豆角干100克、鲩鱼尾1条、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：消化系统弱者、对豆角过敏者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将豆角干泡软备用将鲩鱼尾洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入泡软的豆角干转小火慢炖2小时以上，直至鱼尾肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 糯稻根 太子参 脾 肾 糯稻根太子参煲泥鳅鱼汤 补肾 益精 健脾 温胃">
+                            <a href="#糯稻根太子参煲泥鳅鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">糯稻根太子参煲泥鳅鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\糯稻根太子参煲泥鳅鱼汤-0000.png" alt="糯稻根太子参煲泥鳅鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="糯稻根太子参煲泥鳅鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\糯稻根太子参煲泥鳅鱼汤-0000.png"
+                                            alt="糯稻根太子参煲泥鳅鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">糯稻根太子参煲泥鳅鱼汤</h1>
+                                    <span class="projectcat redtxt">产后阴虚多汗，小儿睡觉多汗</span>
+                                    <span class="cailiao">糯稻根25克、太子参15克、泥鳅鱼250克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将糯稻根和太子参洗净备用将泥鳅鱼洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的糯稻根和太子参转小火慢炖1小时以上，直至泥鳅鱼肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 云苓 黄精 肺 肾 云苓黄精生蚝汤 补肾 益精 润肺 止咳">
+                            <a href="#云苓黄精生蚝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">云苓黄精生蚝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\云苓黄精生蚝汤-0000.png" alt="云苓黄精生蚝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="云苓黄精生蚝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\云苓黄精生蚝汤-0000.png" alt="云苓黄精生蚝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">云苓黄精生蚝汤</h1>
+                                    <span class="projectcat redtxt">白洁皮肤，补肾壮阳、并能活虚、解丹毒、宁心安神健脾渗湿补血养气为秋日靓汤</span>
+                                    <span class="cailiao">云苓20克、黄精20克、红枣8个、鲜生蚝300克、鸡肉350克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将云苓和黄精洗净备用将生蚝洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的云苓和黄精转小火慢炖1小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 酸枣 柏子 心 脾 双仁炖猪心汤 养心 安神 补血 益气">
+                            <a href="#双仁炖猪心汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">双仁炖猪心汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\双仁炖猪心汤1-0000.png" alt="zhishitupu仁炖猪心汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="双仁炖猪心汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\双仁炖猪心汤1-0000.png" alt="双仁炖猪心汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">双仁炖猪心汤</h1>
+                                    <span class="projectcat redtxt">安神定惊，滋补肾阴助睡眠</span>
+                                    <span class="cailiao">酸枣仁12克、柏子仁20克、桂圆10克、猪心1个</span>
+                                    <span class="projectcat redtxt">禁忌：高血压、高血脂、高胆固醇者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将核桃和杏仁洗净备用将猪心切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的核桃和杏仁转小火慢炖2小时以上，直至猪心肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 江珧柱 脾 肾 大地鱼瘦肉滚豆腐汤 健脾 益肾 滋阴 养血">
+                            <a href="#大地鱼瘦肉滚豆腐汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">大地鱼瘦肉滚豆腐汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\大地鱼瘦肉滚豆腐汤-0000.png" alt="大地鱼瘦肉滚豆腐汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="大地鱼瘦肉滚豆腐汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\大地鱼瘦肉滚豆腐汤-0000.png"
+                                            alt="大地鱼瘦肉滚豆腐汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">大地鱼瘦肉滚豆腐汤</h1>
+                                    <span class="projectcat redtxt">醒明可口，为秋日滋润汤水</span>
+                                    <span class="cailiao">大地鱼半条、瘦肉150克、豆腐1块、江珧柱20克、姜4片、生葱2条</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将大地鱼去鳞、去内脏后切块备用将瘦肉切片备用将豆腐切块备用将煲汤锅中加入清水，待水开后放入大地鱼块、瘦肉和豆腐转小火滚煮30分钟以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 玉竹 沙参 薏苡仁 脾 沙参玉竹薏苡仁猪脚筋汤 滋阴 润燥 健脾 养胃">
+                            <a href="#沙参玉竹薏苡仁猪脚筋汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">沙参玉竹薏苡仁猪脚筋汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\沙参玉竹薏苡仁猪脚筋汤-0000.png" alt="沙参玉竹薏苡仁猪脚筋汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="沙参玉竹薏苡仁猪脚筋汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\沙参玉竹薏苡仁猪脚筋汤-0000.png"
+                                            alt="沙参玉竹薏苡仁猪脚筋汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">沙参玉竹薏苡仁猪脚筋汤</h1>
+                                    <span class="projectcat redtxt">健脾补肺，清热利湿、补脚力健筋骨，对皮肤粗糙，秋日干燥可常饮用</span>
+                                    <span class="cailiao">玉竹25克、沙参25克、薏苡仁10克、猪脚筋250克、排骨250克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：脾虚者、湿气重者、风寒咳嗽及中寒便溏者、痰热咳嗽者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将沙参、玉竹和薏苡仁洗净备用将猪脚筋洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的沙参、玉竹和薏苡仁转小火慢炖2小时以上，直至猪脚筋烂熟入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 南杏 北杏 雪梨 麻黄 肺 肾 大肠 雪梨麻黄瘦肉汤 清热 化痰 润肺 止咳">
+                            <a href="#雪梨麻黄瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">雪梨麻黄瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\雪梨麻黄瘦肉汤-0000.png" alt="雪梨麻黄瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="雪梨麻黄瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\雪梨麻黄瘦肉汤-0000.png" alt="雪梨麻黄瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">雪梨麻黄瘦肉汤</h1>
+                                    <span class="projectcat redtxt">有润肺化痰止咳退热降火清心解疮毒和解酒毒功效，有温中益气益肺止咳作用</span>
+                                    <span class="cailiao">南杏12克、北杏12克、雪梨2个、麻黄8克、瘦肉200克、蜜枣3个</span>
+                                    <span class="projectcat redtxt">禁忌：易腹泻者、脾胃虚弱者、脂肪肝者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将雪梨去皮、去核后切块备用，将麻黄洗净备用将瘦肉切片备用将煲汤锅中加入清水，放入洗净的麻黄和切好的雪梨转小火煮20分钟，然后放入瘦肉，再煮20分钟，直至肉熟软根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 雪耳 麻黄 心 脾 肺 苹果雪耳瘦肉汤 滋阴 润肺 益气 健脾">
+                            <a href="#苹果雪耳瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">苹果雪耳瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\苹果雪耳瘦肉汤-0000.png" alt="苹果雪耳瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="苹果雪耳瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\苹果雪耳瘦肉汤-0000.png" alt="苹果雪耳瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">苹果雪耳瘦肉汤</h1>
+                                    <span class="projectcat redtxt">滋阴泣燥，补益气血，健脾祛湿，健脾固精，男女老少适宜</span>
+                                    <span class="cailiao">雪耳20克、苹果2个、麻黄8克、瘦肉200克、蜜枣3个</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将苹果去核后切块备用将雪耳泡软备用将瘦肉切片备用将煲汤锅中加入清水，放入切好的苹果和泡软的雪耳转小火煮30分钟，然后放入瘦肉，再煮20分钟，直至肉熟软根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 橄榄 肺 鲜橄榄煲海螺瘦肉汤 滋阴 润肺 清热 解毒">
+                            <a href="#鲜橄榄煲海螺瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">鲜橄榄煲海螺瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\鲜橄榄煲海螺瘦肉汤-0000.png" alt="鲜橄榄煲海螺瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="鲜橄榄煲海螺瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\鲜橄榄煲海螺瘦肉汤-0000.png"
+                                            alt="鲜橄榄煲海螺瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">鲜橄榄煲海螺瘦肉汤</h1>
+                                    <span class="projectcat redtxt">适合风热引起的咽喉炎，可清凉解毒利咽</span>
+                                    <span class="cailiao">海螺300克、瘦肉500克、新鲜橄榄15个</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将鲜橄榄去核备用将海螺洗净备用将瘦肉切片备用将煲汤锅中加入清水，放入洗净的海螺和切好的鲜橄榄转小火煮30分钟，然后放入瘦肉，再煮20分钟，直至肉熟软根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 黄豆 龙利叶 心 龙利叶黄豆炖白鲫鱼 益气 养血 利水 消肿">
+                            <a href="#龙利叶黄豆炖白鲫鱼" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">龙利叶黄豆炖白鲫鱼</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\龙利叶黄豆炖白鲫鱼-0000.png" alt="龙利叶黄豆炖白鲫鱼" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="龙利叶黄豆炖白鲫鱼" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\龙利叶黄豆炖白鲫鱼-0000.png"
+                                            alt="龙利叶黄豆炖白鲫鱼" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">龙利叶黄豆炖白鲫鱼</h1>
+                                    <span class="projectcat redtxt">对支气管炎及肺气肿有食疗作用</span>
+                                    <span class="cailiao">黄豆100克、龙利叶20克、白鲫鱼400克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将龙利叶和黄豆洗净备用将白鲫鱼去鳞、去内脏后切块备用将煲汤锅中加入清水，放入洗净的龙利叶和黄豆转小火炖煮1小时，然后放入切好的白鲫鱼块，继续炖煮30分钟，直至鱼肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 冬虫草 肺 肾 冬虫草炖水鸭 补肾 壮阳 滋阴 润肺">
+                            <a href="#冬虫草炖水鸭" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">冬虫草炖水鸭</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\冬虫草炖水鸭-0000.png" alt="冬虫草炖水鸭" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="冬虫草炖水鸭" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\冬虫草炖水鸭-0000.png" alt="冬虫草炖水鸭" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">冬虫草炖水鸭</h1>
+                                    <span class="projectcat redtxt">化疗术后，长期白细胞偏低</span>
+                                    <span class="cailiao">冬虫草7条、水鸭150克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将冬虫草洗净备用将水鸭切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入冬虫草转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 头菇 白果 莲子 肺 猴头菇白果鲨鱼骨汤 益气 养血 滋阴 润肺">
+                            <a href="#猴头菇白果鲨鱼骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">猴头菇白果鲨鱼骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\猴头菇白果鲨鱼骨汤-0000.png" alt="猴头菇白果鲨鱼骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="猴头菇白果鲨鱼骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\猴头菇白果鲨鱼骨汤-0000.png"
+                                            alt="猴头菇白果鲨鱼骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">猴头菇白果鲨鱼骨汤</h1>
+                                    <span class="projectcat redtxt">养胃健胃，滋肾补肺，养血安神，生精增髓，含骨胶原，能滋补身体抗癌清瘤</span>
+                                    <span class="cailiao">猴头菇50克、白果，莲子，淡菜各25克、鲨鱼骨150克、鲜鸡肉500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将猴头菇和白果洗净备用将鲨鱼骨洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入猴头菇和白果转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 蚝豉 脾 黄豆蚝豉排骨苦瓜汤 清热 解毒 利湿 祛痰">
+                            <a href="#黄豆蚝豉排骨苦瓜汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">黄豆蚝豉排骨苦瓜汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\黄豆蚝豉排骨苦瓜汤-0000.png" alt="黄豆蚝豉排骨苦瓜汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="黄豆蚝豉排骨苦瓜汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\黄豆蚝豉排骨苦瓜汤-0000.png"
+                                            alt="黄豆蚝豉排骨苦瓜汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">黄豆蚝豉排骨苦瓜汤</h1>
+                                    <span class="projectcat redtxt">对口腔溃烂，虚火，消化不良可滋阴降火</span>
+                                    <span class="cailiao">蚝豉8粒、黄豆100克、苦瓜一条、排骨500克</span>
+                                    <span class="projectcat redtxt">禁忌：脾胃虚寒、便溏腹泻者、痛风患者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将黄豆和蚝豉洗净备用将排骨切段，苦瓜切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入黄豆和蚝豉转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 陈皮  脾 肺 红罗卜排骨汤 健脾 消食 润肺 止咳">
+                            <a href="#红罗卜排骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">红罗卜排骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\红罗卜排骨汤-0000.png" alt="红罗卜排骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="红罗卜排骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\红罗卜排骨汤-0000.png" alt="红罗卜排骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">红罗卜排骨汤</h1>
+                                    <span class="projectcat redtxt">能增强体质，提高免疫力和润泽肌肤且补中益气</span>
+                                    <span class="cailiao">红罗卜750克、排骨500克、蜜枣3个，陈皮半块、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：湿热痰滞积者、高血脂者、脾胃不足者、慢性胃炎者、 支气管炎者、复发性过敏性皮炎的老者、皮肤疥疮者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将红罗卜去皮切块备用将排骨切段，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入红罗卜转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 鲜莲子 草菇 脾 鲜莲子滚鸡肉汤 补脾 养胃 益气 生津">
+                            <a href="#鲜莲子滚鸡肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">鲜莲子滚鸡肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\鲜莲子滚鸡肉汤-0000.png" alt="鲜莲子滚鸡肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="鲜莲子滚鸡肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\鲜莲子滚鸡肉汤-0000.png" alt="鲜莲子滚鸡肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">鲜莲子滚鸡肉汤</h1>
+                                    <span class="projectcat redtxt">有镇静强心和抗衰老，益心补肾，健脾止泻，固精，对心悸失眠烦躁有安神作用</span>
+                                    <span class="cailiao">鲜莲子200克、草菇100克、丝瓜80克、鸡肉200克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将鲜莲子洗净备用将鸡肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入鲜莲子转小火慢炖1小时以上，直至鸡肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 西洋参 淮山 脾 肾 西洋参淮山红枣清炖乳鸽 补气 养血 益肾 健脾">
+                            <a href="#西洋参淮山红枣清炖乳鸽" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">西洋参淮山红枣清炖乳鸽</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\西洋参淮山红枣清炖乳鸽-0000.png" alt="西洋参淮山红枣清炖乳鸽" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="西洋参淮山红枣清炖乳鸽" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\西洋参淮山红枣清炖乳鸽-0000.png"
+                                            alt="西洋参淮山红枣清炖乳鸽" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">西洋参淮山红枣清炖乳鸽</h1>
+                                    <span class="projectcat redtxt">清补滋阴益气补肺健脾，补气养阴，清火生津，合适养生之用</span>
+                                    <span class="cailiao">西洋参30克、淮山60克、红枣6个，乳鸽2克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将西洋参、淮山和红枣洗净备用将乳鸽去毛和内脏洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的西洋参、淮山和红枣转小火慢炖2小时以上，直至乳鸽肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 百合 花旗参 心 肺 绿豆百合炖白鸽 清热 解毒 润肺 止咳">
+                            <a href="#绿豆百合炖白鸽" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">绿豆百合炖白鸽</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\绿豆百合炖白鸽-0000.png" alt="绿豆百合炖白鸽" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="绿豆百合炖白鸽" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\绿豆百合炖白鸽-0000.png" alt="绿豆百合炖白鸽" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">绿豆百合炖白鸽</h1>
+                                    <span class="projectcat redtxt">对脸长痘痘，多油，便秘有解毒利泻作用</span>
+                                    <span class="cailiao">绿豆30克、百合15克、花旗参10克、白鸽1只</span>
+                                    <span class="projectcat redtxt">禁忌：脾胃虚寒者、寒性体质者、风寒咳嗽者、脾虚便溏者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将绿豆和百合洗净备用将白鸽去毛和内脏洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的绿豆和百合转小火慢炖2小时以上，直至鸽肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 北芪 心 脾 肾 花生北芪红枣煲牛展 补气 养血 益肾 健脾">
+                            <a href="#花生北芪红枣煲牛展" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">花生北芪红枣煲牛展</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\花生北芪红枣煲牛展-0000.png" alt="花生北芪红枣煲牛展" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="花生北芪红枣煲牛展" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\花生北芪红枣煲牛展-0000.png"
+                                            alt="花生北芪红枣煲牛展" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">花生北芪红枣煲牛展</h1>
+                                    <span class="projectcat redtxt">小儿发育不良，瘦弱、嘴唇发蓝，中医说有风，脾虚血气不足，可以旺血</span>
+                                    <span class="cailiao">花生100克、北芪15克、红枣6个、牛展</span>
+                                    <span class="projectcat redtxt">禁忌：高血脂者、胆囊切除者、消化不良患者、痛风者、糖尿病者、体质过热者、孕妇
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将花生、北芪和红枣洗净备用将牛展洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的花生、北芪和红枣转小火慢炖2小时以上，直至牛展肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 鲜荷花 荔枝干 肺 荷花荔枝干炖老鸭 清热 润肺 益气 养血">
+                            <a href="#荷花荔枝干炖老鸭" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">荷花荔枝干炖老鸭</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\荷花荔枝干炖老鸭-0000.png" alt="荷花荔枝干炖老鸭" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="荷花荔枝干炖老鸭" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\荷花荔枝干炖老鸭-0000.png" alt="荷花荔枝干炖老鸭" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">荷花荔枝干炖老鸭</h1>
+                                    <span
+                                        class="projectcat redtxt">荔枝干能营养肝血，美容润肤，通神益智，宜作津液不足，伤血和胃寒之用，民间有血寒补荔枝，血热补龙眼之说，荔枝干作补补益无损，不至助火生热，有生津止渴，清热除燥，养胃消食，调气舒郁之用</span>
+                                    <span class="cailiao">鲜荷花2朵、荔枝干10个、光老鸭750克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：糖尿病者、高血脂者、体质虚弱者、阴虚火旺者、牙龈肿痛者、咽喉炎者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将荷花、荔枝干和老鸭洗净备用将老鸭去毛和内脏洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的荷花和荔枝干转小火慢炖2小时以上，直至鸭肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 淮山 杞子 陈皮 肺 肾 石斛淮山杞子猪骨汤 滋阴 润肺 补肾 益精">
+                            <a href="#石斛淮山杞子猪骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛淮山杞子猪骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛淮山杞子猪骨汤-0000.png" alt="石斛淮山杞子猪骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛淮山杞子猪骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛淮山杞子猪骨汤-0000.png"
+                                            alt="石斛淮山杞子猪骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛淮山杞子猪骨汤</h1>
+                                    <span class="projectcat redtxt">润肺生津</span>
+                                    <span class="cailiao">石斛25克、淮山50克、杞子25克、陈皮10克、猪骨500克</span>
+                                    <span class="projectcat redtxt">禁忌：湿热体质者、痰湿体质者、感冒发热者、脾胃虚弱者、糖尿病者、孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛、淮山和杞子洗净备用将猪骨洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的石斛、淮山和杞子转小火慢炖2小时以上，直至猪骨肉烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 肺 肾 石斛冰糖茶 滋阴 润肺 补肾 益精">
+                            <a href="#石斛冰糖茶" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛冰糖茶</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛冰糖茶-0000.png" alt="石斛冰糖茶" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛冰糖茶" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛冰糖茶-0000.png" alt="石斛冰糖茶" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛冰糖茶</h1>
+                                    <span class="projectcat redtxt">治低热，口干渴，虚劳烦热，养阴清热，生津益胃</span>
+                                    <span class="cailiao">石斛15克、冰糖5克</span>
+                                    <span class="projectcat redtxt">禁忌：湿热体质者、痰湿体质者、感冒发热者、脾胃虚弱者、糖尿病者、孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛洗净备用将冰糖和清水放入煲汤锅中，加热至冰糖完全溶解然后加入洗净的石斛，继续煮15分钟，直至汤汁浓郁可根据个人口味加入适量红枣或枸杞等调味
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 麦冬 肺 肾 石斛麦冬瘦肉汽 滋阴 润肺 补肾 养血">
+                            <a href="#石斛麦冬瘦肉汽" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛麦冬瘦肉汽</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛麦冬瘦肉汽-0000.png" alt="石斛麦冬瘦肉汽" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛麦冬瘦肉汽" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛麦冬瘦肉汽-0000.png" alt="石斛麦冬瘦肉汽" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛麦冬瘦肉汽</h1>
+                                    <span class="projectcat redtxt">对糖尿病胃阴不足，烦渴多饮，口干舌燥，小便多，大便结，有生津止渴，清热养胃</span>
+                                    <span class="cailiao">瘦肉250克、石斛15克、麦冬20克、红枣4个</span>
+                                    <span class="projectcat redtxt">禁忌：阴盛阳虚体质者、体质虚寒者、孕妇、哺乳期妇女、糖尿病者、肥胖属湿浊内盛者、脾胃虚寒者、儿童
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛、麦冬和瘦肉洗净备用将清水放入煲汤锅中，加热至沸腾然后放入洗净的石斛、麦冬和瘦肉，煮至瘦肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 太子参 石斛 肝 石斛太子参煲瘦肉 滋阴 润肺 补气 益肾">
+                            <a href="#石斛太子参煲瘦肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛太子参煲瘦肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛太子参煲瘦肉-0000.png" alt="石斛太子参煲瘦肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛太子参煲瘦肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛太子参煲瘦肉-0000.png" alt="石斛太子参煲瘦肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛太子参煲瘦肉</h1>
+                                    <span class="projectcat redtxt">刷牙容易流牙血属阴虚火旺型热气喉干，喉痛，容易上火</span>
+                                    <span class="cailiao">太子参25克、石斛25克、瘦肉500克</span>
+                                    <span class="projectcat redtxt">禁忌：热病早期阴未伤者、湿温病未化燥者、脾胃虚寒者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛、太子参洗净备用将瘦肉洗净，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的石斛、太子参转小火慢炖2小时以上，直至肉煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 太子参 淮山 肝 肾 明目补肝汤 滋阴 清热 益肝 明目">
+                            <a href="#明目补肝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">明目补肝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\明目补肝汤-0000.png" alt="明目补肝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="明目补肝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\明目补肝汤-0000.png" alt="补肝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">明目补肝汤</h1>
+                                    <span class="projectcat redtxt">对常看计算机，眼睛很干有补肝明目作用</span>
+                                    <span class="cailiao">石斛15克、太子参15克、淮山15克、瘦肉300克</span>
+                                    <span class="projectcat redtxt">禁忌：高胆固醇血症者、肝病者、高血压者、冠心病患者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将枸杞、菊花、当归和红枣洗净备用将猪肝切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的枸杞、菊花、当归和红枣转小火慢炖1小时以上，直至猪肝熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 杞子 肝 肾 石斛杞子猪肝汤 滋阴 养血 益肾 补肝">
+                            <a href="#石斛杞子猪肝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛杞子猪肝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛杞子猪肝汤-0000.png" alt="石斛杞子猪肝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛杞子猪肝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛杞子猪肝汤-0000.png" alt="石斛杞子猪肝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛杞子猪肝汤</h1>
+                                    <span class="projectcat redtxt">对曾患肝炎，轻度脂肪肝，疲惫老想睡觉有襁补肝阴作用</span>
+                                    <span class="cailiao">石斛12克、杞子12克、猪肝</span>
+                                    <span class="projectcat redtxt">禁忌：孕妇、哺乳期妇女、肾功能衰竭者、高钙血症者、高磷血症者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛和杞子洗净备用将猪肝切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的石斛和杞子转小火慢炖2小时以上，直至猪肝熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 肾 清炖蚌肉 滋阴 润燥 补肾 壮阳">
+                            <a href="#清炖蚌肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">清炖蚌肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\清炖蚌肉-0000.png" alt="清炖蚌肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="清炖蚌肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\清炖蚌肉-0000.png" alt="清炖蚌肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">清炖蚌肉</h1>
+                                    <span class="projectcat redtxt">养肝滋阴，明目解毒，凉血止渴，且能用于视力不足，尤对老人有益对糖尿病阴虚者也大有裨益</span>
+                                    <span class="cailiao">鲜蚌肉500克、姜2片</span>
+                                    <span class="projectcat redtxt">禁忌：脾虚便溏者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将蚌肉洗净备用将蚌肉放入煲汤锅中，加入适量清水转小火慢炖1小时以上，直至蚌肉煮熟，汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 松子仁 西洋参 脾 肾 松子仁煲西洋参鲜鸡汤 补气 养血 益肾 健脾">
+                            <a href="#松子仁煲西洋参鲜鸡汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">松子仁煲西洋参鲜鸡汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\松子仁煲西洋参鲜鸡汤-0000.png" alt="松子仁煲西洋参鲜鸡汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="松子仁煲西洋参鲜鸡汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\松子仁煲西洋参鲜鸡汤-0000.png"
+                                            alt="松子仁煲西洋参鲜鸡汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">松子仁煲西洋参鲜鸡汤</h1>
+                                    <span class="projectcat redtxt">皮肤经常痒或湿疹，可防秋燥日皮肤干燥，痕痒</span>
+                                    <span class="cailiao">松子仁50克、西洋参25克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将松子仁洗净备用根据选择的肉类（鲜鸡）和药材（西洋参），将肉类和药材放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 橄榄 响螺 脾 橄榄响螺瘦肉汤 清热 解毒 利水 消肿">
+                            <a href="#橄榄响螺瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">橄榄响螺瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\橄榄响螺瘦肉汤-0000.png" alt="橄榄响螺瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="橄榄响螺瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\橄榄响螺瘦肉汤-0000.png" alt="橄榄响螺瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">橄榄响螺瘦肉汤</h1>
+                                    <span class="projectcat redtxt">对因天气干燥感觉口干，鼻干，有滋润作用</span>
+                                    <span class="cailiao">橄榄10个、响螺150克、瘦肉250克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将橄榄洗净备用根据选择的肉类（瘦肉），将肉类和橄榄放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 霸王花 鲜茅根 南杏 北杏 肺 鲜茅根霸王花猪肺汤 清热 解毒 润肺 止咳">
+                            <a href="#鲜茅根霸王花猪肺汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">鲜茅根霸王花猪肺汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\鲜茅根霸王花猪肺汤-0000.png" alt="鲜茅根霸王花猪肺汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="鲜茅根霸王花猪肺汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\鲜茅根霸王花猪肺汤-0000.png"
+                                            alt="鲜茅根霸王花猪肺汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">鲜茅根霸王花猪肺汤</h1>
+                                    <span class="projectcat redtxt">润肺益气，止咳除痰，祛痰理气消热凉血，利尿消肿可用于湿热消滞，小便不利</span>
+                                    <span class="cailiao">霸王花50克、鲜茅根80克、南杏20克、北杏15克、猪肺1个，蜜枣4个</span>
+                                    <span class="projectcat redtxt">禁忌：阴虚体质者、经期女性、孕妇、寒湿痰咳者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将鲜茅根和霸王花洗净备用将猪肺洗净备用将煲汤锅中加入清水，放入洗净的鲜茅根、霸王花和猪肺转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淮山 西施骨 脾 肾 蜜枣淮山西施骨汤 补脾 健胃 益肾 养血">
+                            <a href="#蜜枣淮山西施骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">蜜枣淮山西施骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\蜜枣淮山西施骨汤-0000.png" alt="蜜枣淮山西施骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="蜜枣淮山西施骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\蜜枣淮山西施骨汤-0000.png" alt="蜜枣淮山西施骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">蜜枣淮山西施骨汤</h1>
+                                    <span
+                                        class="projectcat redtxt">西施骨为猪前脚近背部全瘦肉的骨，用益气生津润肺的蜜枣，健脾补中滋养的淮山配伍为汤，清润而滋补，为秋日之靓汤</span>
+                                    <span class="cailiao">淮山50克、蜜枣6个、西施骨400克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将蜜枣、淮山和西施骨洗净备用将煲汤锅中加入清水，放入洗净的蜜枣、淮山和西施骨转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 灵芝 心 脾 灵芝煲猪肚 补气 养血 调理 脾胃">
+                            <a href="#灵芝煲猪肚" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">灵芝煲猪肚</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\灵芝煲猪肚-0000.png" alt="灵芝煲猪肚" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="灵芝煲猪肚" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\灵芝煲猪肚-0000.png" alt="灵芝煲猪肚" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">灵芝煲猪肚</h1>
+                                    <span class="projectcat redtxt">有慢性胃炎，经常会胃痛，体质怕寒凉，可煲此汤</span>
+                                    <span class="cailiao">猪肚1个，灵芝200克、蜜枣4个</span>
+                                    <span class="projectcat redtxt">禁忌：实证及外感初起者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将灵芝洗净备用将猪肚洗净备用将煲汤锅中加入清水，放入洗净的灵芝和猪肚转小火慢炖2小时以上，直至猪肚煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 杞子 肝 肾 杞子滚牛肝汤 补肝 益肾 明目 强身">
+                            <a href="#杞子滚牛肝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">杞子滚牛肝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\杞子滚牛肝汤-0000.png" alt="杞子滚牛肝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="杞子滚牛肝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\杞子滚牛肝汤-0000.png" alt="杞子滚牛肝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">杞子滚牛肝汤</h1>
+                                    <span
+                                        class="projectcat redtxt">具有补肝，养血、明目、健美、益寿的功效亦能用于免疫力低下，贫血经络技巧公众号提示肝血虚引起的眩晕，面色无华，视物模糊等症，能滋补肝肾，益精明目</span>
+                                    <span class="cailiao">牛肝200克、杞子30克、牛肉200克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将杞子洗净备用将牛肝切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的杞子转小火滚煮30分钟以上，直至牛肝熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 使君子 脾 肺 使君子煲瘦肉汤 健脾 消食 润肺 止咳">
+                            <a href="#使君子煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">使君子煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\使君子煲瘦肉汤-0000.png" alt="使君子煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="使君子煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\使君子煲瘦肉汤-0000.png" alt="使君子煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">使君子煲瘦肉汤</h1>
+                                    <span class="projectcat redtxt">儿童夜睡不宁睡眠差，或有蛔虫有辅助治疗作用</span>
+                                    <span class="cailiao">使君子15克、瘦肉150</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将使君子洗净备用将瘦肉切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的使君子转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 玉竹 沙参 心 脾 肺 石斛玉竹沙参煲瘦肉汤 滋阴 润肺 补气 健脾">
+                            <a href="#石斛玉竹沙参煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">石斛玉竹沙参煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\石斛玉竹沙参煲瘦肉汤-0000.png" alt="石斛玉竹沙参煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="石斛玉竹沙参煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\石斛玉竹沙参煲瘦肉汤-0000.png"
+                                            alt="石斛玉竹沙参煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">石斛玉竹沙参煲瘦肉汤</h1>
+                                    <span class="projectcat redtxt">对舌头两边，舌尖及牙肉周边长期口腔溃疡病有辅助治疗作用</span>
+                                    <span class="cailiao">石斛15克、玉竹15克、沙参15克、瘦肉200克</span>
+                                    <span class="projectcat redtxt">禁忌：脾虚者、湿气重者、风寒咳嗽者、中寒便溏者、痰热咳嗽者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将石斛、玉竹和沙参洗净备用将瘦肉切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的石斛、玉竹和沙参转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 无花果 肺 椰子黄豆无花果田鸡汤 滋阴 养血 润肺 止咳">
+                            <a href="#椰子黄豆无花果田鸡汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">椰子黄豆无花果田鸡汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\椰子黄豆无花果田鸡汤-0000.png" alt="椰子黄豆无花果田鸡汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="椰子黄豆无花果田鸡汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\椰子黄豆无花果田鸡汤-0000.png"
+                                            alt="椰子黄豆无花果田鸡汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">椰子黄豆无花果田鸡汤</h1>
+                                    <span class="projectcat redtxt">能宽中益气，利大肠，清热解毒，利水消肿，健胃，润肠、利咽、滋阴、补元气治脾虚</span>
+                                    <span class="cailiao">黄豆50克、椰子1个、无花果6个、田鸡750克、鸡肉350克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将椰子剥开取出果肉备用将黄豆和无花果洗净备用将田鸡去毛和内脏洗净备用将煲汤锅中加入清水，放入椰子果肉、黄豆、无花果和田鸡转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="tile medium 猫爪草 脾 猫爪草煲瘦肉 清热 解毒 利水 消肿">
+                            <a href="#猫爪草煲瘦肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">猫爪草煲瘦肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\猫爪草煲瘦肉-0000.png" alt="猫爪草煲瘦肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="猫爪草煲瘦肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\猫爪草煲瘦肉-0000.png" alt="猫爪草煲瘦肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">猫爪草煲瘦肉</h1>
+                                    <span class="projectcat redtxt">对乳腺结节能散坚软结</span>
+                                    <span class="cailiao">猫爪草20克、瘦肉150克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将猫爪草洗净备用将瘦肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的猫爪草转小火慢炖2小时以上，直至肉熟软根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+
+
+
+                        <div class="tile medium 杜仲 补骨脂 肝 肾 杜仲补骨脂排骨汤 强筋 壮骨 滋阴 养血">
+                            <a href="#杜仲补骨脂排骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">杜仲补骨脂排骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\杜仲补骨脂排骨汤-0000.png" alt="杜仲补骨脂排骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="杜仲补骨脂排骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\杜仲补骨脂排骨汤-0000.png" alt="杜仲补骨脂排骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">杜仲补骨脂排骨汤</h1>
+                                    <span class="projectcat redtxt">对腰肌劳损能固肾旺气血</span>
+                                    <span class="cailiao">杜仲25克、补骨脂15克、排骨、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：阴虚火旺者、肝肾功能异常者、过敏体质者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将杜仲和补骨脂洗净备用将排骨切段，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的杜仲和补骨脂转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淮山 桂圆 脾 肾 淮山桂圆炖水鱼 补脾 健胃 益肾 补血">
+                            <a href="#淮山桂圆炖水鱼" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">淮山桂圆炖水鱼</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\淮山桂圆炖水鱼-0000.png" alt="淮山桂圆炖水鱼" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="淮山桂圆炖水鱼" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\淮山桂圆炖水鱼-0000.png" alt="淮山桂圆炖水鱼" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">淮山桂圆炖水鱼</h1>
+                                    <span
+                                        class="projectcat redtxt">滋阴潜阳，散结消坚，补劳损，壮阳气，可用于肺结核低热，痰中带血，脾肺两虚的慢性咳嗽，食欲不振，贫血，心悸，肝硬化，慢性肝炎等</span>
+                                    <span class="cailiao">淮山25克、桂圆25克、水鱼1只，瘦肉100克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将淮山去皮切块备用将桂圆洗净备用将水鱼去鳞、去内脏后切块备用将煲汤锅中加入清水，放入淮山、桂圆和水鱼转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 眉豆 脾 眉豆花生玉米煲山斑鱼汤 健脾 消食 利水 消肿">
+                            <a href="#眉豆花生玉米煲山斑鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">眉豆花生玉米煲山斑鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\眉豆花生玉米煲山斑鱼汤-0000.png" alt="眉豆花生玉米煲山斑鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="眉豆花生玉米煲山斑鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\眉豆花生玉米煲山斑鱼汤-0000.png"
+                                            alt="眉豆花生玉米煲山斑鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">眉豆花生玉米煲山斑鱼汤</h1>
+                                    <span class="projectcat redtxt">对天气转凉还怕热，有干咳，有痰，或高血压，粮尿病等有健脾敛汗作用</span>
+                                    <span class="cailiao">眉豆、花生、玉米、姜、山斑鱼、瘦肉</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将眉豆、花生和玉米洗净备用将山斑鱼去鳞、去内脏后切块备用将煲汤锅中加入清水，放入眉豆、花生、玉米和山斑鱼转小火慢炖2小时以上，直至鱼肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 无花果 脾 肺 无花果花生煲猪肚汤 补脾 养胃 润肺 止咳">
+                            <a href="#无花果花生煲猪肚汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">无花果花生煲猪肚汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\无花果花生煲猪肚汤-0000.png" alt="无花果花生煲猪肚汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="无花果花生煲猪肚汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\无花果花生煲猪肚汤-0000.png"
+                                            alt="无花果花生煲猪肚汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">无花果花生煲猪肚汤</h1>
+                                    <span class="projectcat redtxt">秋日进补，养胃为先，猪肚为补脾之要品，无花果能健肠胃，活血通络，湿中下气功效</span>
+                                    <span class="cailiao">无花果60克、花生50克、猪肚1个、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将无花果和花生洗净备用将猪肚洗净备用将煲汤锅中加入清水，放入无花果、花生和猪肚转小火慢炖2小时以上，直至猪肚煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 心 脾 肾 榴莲芯煲鲫鱼汤 补气 养血 益肾 壮阳">
+                            <a href="#榴莲芯煲鲫鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">榴莲芯煲鲫鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\榴莲芯煲鲫鱼汤-0000.png" alt="榴莲芯煲鲫鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="榴莲芯煲鲫鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\榴莲芯煲鲫鱼汤-0000.png" alt="榴莲芯煲鲫鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">榴莲芯煲鲫鱼汤</h1>
+                                    <span class="projectcat redtxt">对小便频繁，有夜尿，冬天晚上流虚汗，以固肾壮阳为主，该汤全家都可以喝</span>
+                                    <span class="cailiao">榴莲芯400克、鲫鱼2条，姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：高尿酸血症者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将榴莲果肉取出，将榴莲芯洗净备用将鲫鱼洗净备用将煲汤锅中加入清水，放入榴莲芯和鲫鱼转小火慢炖1小时以上，直至鱼肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淮山 茨实 莲子 肺 肾 淮山莲子煲海龙 滋阴 润肺 补肾 益精">
+                            <a href="#淮山莲子煲海龙" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">淮山莲子煲海龙</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\淮山莲子煲海龙-0000.png" alt="淮山莲子煲海龙" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="淮山莲子煲海龙" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\淮山莲子煲海龙-0000.png" alt="淮山莲子煲海龙" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">淮山莲子煲海龙</h1>
+                                    <span class="projectcat redtxt">对小便频繁，有夜尿，冬天晚上流虚汗，以固肾壮阳为主，该汤全家都可以喝</span>
+                                    <span class="cailiao">淮山40克、茨实40克、莲子25克、海龙5条</span>
+                                    <span class="projectcat redtxt">禁忌：胃肠郁滞者、胃肠湿热者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将淮山去皮切块备用将莲子洗净备用根据选择的药材（海龙）和肉类（瘦肉），将药材和肉类放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="tile medium 毛冬青 杞子 菟丝子 熟地 肺 肾 毛冬青杞子菟丝子煲瘦肉汤 滋阴 润肺 补肾 益精">
+                            <a href="#毛冬青杞子菟丝子煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">毛冬青杞子菟丝子煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\毛冬青杞子菟丝子煲瘦肉汤-0000.png" alt="毛冬青杞子菟丝子煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="毛冬青杞子菟丝子煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\毛冬青杞子菟丝子煲瘦肉汤-0000.png"
+                                            alt="毛冬青杞子菟丝子煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">毛冬青杞子菟丝子煲瘦肉汤</h1>
+                                    <span
+                                        class="projectcat redtxt">此为民间辅助治疗糖尿病的验方汤水，不但能辅助治疗糖尿病，亦能起预防作用，是秋日靓汤，毛冬青性寒味辛苦，能活血祛瘀，清热解毒，祛痰止咳，杞子性平味甘，能滋补肝肾，益精明目，菟丝子性温味甘，能滋补肝肾益精壮阳，熟地能滋阴补血</span>
+                                    <span class="cailiao">毛冬青30克、杞子10克、菟丝子10克、熟地10克、瘦肉400克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将毛冬青、杞子和菟丝子洗净备用将瘦肉切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的毛冬青、杞子和菟丝子转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 脾 肺 西红柿滚咸猪肉汤 清热 解毒 润肺 化痰">
+                            <a href="#西红柿滚咸猪肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">西红柿滚咸猪肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\西红柿滚咸猪肉汤-0000.png" alt="西红柿滚咸猪肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="西红柿滚咸猪肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\西红柿滚咸猪肉汤-0000.png" alt="西红柿滚咸猪肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">西红柿滚咸猪肉汤</h1>
+                                    <span class="projectcat redtxt">能清热润燥，开胃消食，生津止渴，有健脾滋润下火的作用，适用于胃热或口腔溃烂，牙龈肿痛等</span>
+                                    <span class="cailiao">西红柿500克、红萝卜2个、咸猪肉300克、姜3片、葱1根</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将西红柿切块备用将咸猪肉切片，放入煲汤锅中加入清水，待水开后放入切好的西红柿转小火滚煮30分钟以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 川贝 北杏 脾 肺 川贝北杏炖鳄鱼肉 润肺 止咳 清热 解毒">
+                            <a href="#川贝北杏炖鳄鱼肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">川贝北杏炖鳄鱼肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\川贝北杏炖鳄鱼肉-0000.png" alt="川贝北杏炖鳄鱼肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="川贝北杏炖鳄鱼肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\川贝北杏炖鳄鱼肉-0000.png" alt="川贝北杏炖鳄鱼肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">川贝北杏炖鳄鱼肉</h1>
+                                    <span class="projectcat redtxt">治咳嗽，气不顺</span>
+                                    <span class="cailiao">鳄鱼肉100克、川贝12克、北杏12克、瘦肉100克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将川贝和北杏洗净备用将鳄鱼肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的川贝和北杏转小火慢炖2小时以上，直至鳄鱼肉煮熟入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 猫爪草 夏枯草 脾 猫爪草夏枯草煲瘦肉汤 清热 解毒 利湿 消肿">
+                            <a href="#猫爪草夏枯草煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">猫爪草夏枯草煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\猫爪草夏枯草煲瘦肉汤-0000.png" alt="猫爪草夏枯草煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="猫爪草夏枯草煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\猫爪草夏枯草煲瘦肉汤-0000.png"
+                                            alt="猫爪草夏枯草煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">猫爪草夏枯草煲瘦肉汤</h1>
+                                    <span class="projectcat redtxt">可辅助治疗双叶结节甲状腺肿，甲亢等，平时尽量少吃辛辣食物，不要吃加碘食盐</span>
+                                    <span class="cailiao">猫爪草30克、夏枯草45克、黄豆20克、瘦肉500克</span>
+                                    <span class="projectcat redtxt">禁忌：孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将猫爪草和夏枯草洗净备用将瘦肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的猫爪草和夏枯草转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 鲜沙榄 云耳 肾 沙榄去耳煲猪展汤 滋阴 润燥 益肾 补虚">
+                            <a href="#沙榄去耳煲猪展汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">沙榄去耳煲猪展汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\沙榄去耳煲猪展汤-0000.png" alt="沙榄去耳煲猪展汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="沙榄去耳煲猪展汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\沙榄去耳煲猪展汤-0000.png" alt="沙榄去耳煲猪展汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">沙榄去耳煲猪展汤</h1>
+                                    <span class="projectcat redtxt">对咽炎，扁桃体炎有利咽作用</span>
+                                    <span class="cailiao">鲜沙榄10个、云耳50克、猪展肉400克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将沙榄去除果核备用将猪展洗净备用将煲汤锅中加入清水，放入去除果核的沙榄和洗净的猪展转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 灵芝 心 脾 灵芝桂圆煲瘦肉汤 调节 免疫 益气 健脾">
+                            <a href="#灵芝桂圆煲瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">灵芝桂圆煲瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\灵芝桂圆煲瘦肉汤-0000.png" alt="灵芝桂圆煲瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="灵芝桂圆煲瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\灵芝桂圆煲瘦肉汤-0000.png" alt="灵芝桂圆煲瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">灵芝桂圆煲瘦肉汤</h1>
+                                    <span
+                                        class="projectcat redtxt">经常熬夜睡眠不足或睡觉多梦，常会阴虚火旺，喉咙痛可安神定惊助睡眠养阴滋润，灵芝煲老鸭适合治疗多梦，体虚，阴虚火旺，怕冷，手脚冰凉等症状</span>
+                                    <span class="cailiao">桂圆100克、灵芝15克、瘦肉100克</span>
+                                    <span class="projectcat redtxt">禁忌：冠心病属瘀热者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将灵芝洗净备用根据选择的肉类（瘦肉），将肉类和灵芝放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 石斛 西洋参 淮山 心 脾 肺 西洋参石斛淮山煲鸡 滋阴 润肺 补气 养血">
+                            <a href="#西洋参石斛淮山煲鸡" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">西洋参石斛淮山煲鸡</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\西洋参石斛淮山煲鸡-0000.png" alt="西洋参石斛淮山煲鸡" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="西洋参石斛淮山煲鸡" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\西洋参石斛淮山煲鸡-0000.png"
+                                            alt="西洋参石斛淮山煲鸡" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">西洋参石斛淮山煲鸡</h1>
+                                    <span class="projectcat redtxt">经常熬夜睡眠不足，常会阴虚火旺，可安神定惊，养阴滋润</span>
+                                    <span class="cailiao">石斛30克、西洋参20克、淮山20克、鸡一只</span>
+                                    <span class="projectcat redtxt">禁忌：感冒患者、阴盛阳虚者、身体强壮的儿童或青少年、孕妇
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将西洋参、石斛和淮山洗净备用根据选择的肉类（鸡），将肉类和药材放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 竹蔗 陈皮 肺 竹蔗红罗卜猪骨汤 滋阴 润燥 益肺 清热">
+                            <a href="#竹蔗红罗卜猪骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">竹蔗红罗卜猪骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\竹蔗红罗卜猪骨汤-0000.png" alt="竹蔗红罗卜猪骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="竹蔗红罗卜猪骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\竹蔗红罗卜猪骨汤-0000.png" alt="竹蔗红罗卜猪骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">竹蔗红罗卜猪骨汤</h1>
+                                    <span class="projectcat redtxt">清热除烦，生津润燥，益气化痰，和中下气，利咽喉，利小便，解毒，润肠通便，补益身体</span>
+                                    <span class="cailiao">竹蔗250克、红罗卜500克、陈皮1/4个、猪骨500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将竹蔗和红罗卜洗净备用将猪骨洗净备用将煲汤锅中加入清水，放入洗净的竹蔗、红罗卜和猪骨转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 党参 百合 脾 肺 党参百合猪肺 润肺 止咳 益气 健脾">
+                            <a href="#党参百合猪肺" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">党参百合猪肺</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\党参百合猪肺-0000.png" alt="党参百合猪肺" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="党参百合猪肺" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\党参百合猪肺-0000.png" alt="党参百合猪肺" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">党参百合猪肺</h1>
+                                    <span class="projectcat redtxt">党参补中益气，百合温肺止咳，养胃生津安神润肤的作用，可治疗老年慢性支气管炎</span>
+                                    <span class="cailiao">党参30克、百合50春、猪肺1个、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：中满邪实者、湿热证者、热性病症者、有食积气滞表现者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将党参和百合洗净备用将猪肺洗净备用将煲汤锅中加入清水，放入洗净的党参、百合和猪肺转小火慢炖2小时以上，直至猪肺煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 江珧柱 芡实 脾 肾 芡实江珧柱猪粉肠汤 补脾 温胃 益肾 健脾">
+                            <a href="#芡实江珧柱猪粉肠汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">芡实江珧柱猪粉肠汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\芡实江珧柱猪粉肠汤-0000.png" alt="芡实江珧柱猪粉肠汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="芡实江珧柱猪粉肠汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\芡实江珧柱猪粉肠汤-0000.png"
+                                            alt="芡实江珧柱猪粉肠汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">芡实江珧柱猪粉肠汤</h1>
+                                    <span
+                                        class="projectcat redtxt">芡实健脾止泻，益肾固精，补中益气，江珧柱有滋阴补肾，降低血脂，破坏癌细胞生长的作用，猪粉肠能润肠胃，丰肌体，此汤温补滋润，养阴平肝，明目润肺，补膝壮腰</span>
+                                    <span class="cailiao">江珧柱30克、芡实50克、猪粉肠400克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将芡实、江珧柱和猪粉肠洗净备用将猪粉肠切片，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的芡实和江珧柱转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 莲藕 脾 莲藕鲤鱼汤清热 利水 健脾 和胃">
+                            <a href="#莲藕鲤鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">莲藕鲤鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\莲藕鲤鱼汤-0000.png" alt="莲藕鲤鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="莲藕鲤鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\莲藕鲤鱼汤-0000.png" alt="莲藕鲤鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">莲藕鲤鱼汤</h1>
+                                    <span
+                                        class="projectcat redtxt">莲藕是含铁量较高，且又含大量的维生素C和纤维的食物，帮对糖尿病等体虚之人颇为适宜，此汤有滋补气血，滋阴补肾之功效，是深秋时养生汤品之一</span>
+                                    <span class="cailiao">莲藕500克、鲤鱼500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：便溏腹泻者、痛经者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将莲藕去皮切片备用将鲤鱼去鳞、去内脏后切块备用将煲汤锅中加入清水，放入莲藕和鲤鱼转小火慢炖1小时以上，直至鱼肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 川贝 枇杷叶 肺 川贝枇杷叶炖鳄鱼肉瘦肉汤 润肺 止咳 清热 解毒">
+                            <a href="#川贝枇杷叶炖鳄鱼肉瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">川贝枇杷叶炖鳄鱼肉瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\川贝枇杷叶炖鳄鱼肉瘦肉汤-0000.png" alt="川贝枇杷叶炖鳄鱼肉瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="川贝枇杷叶炖鳄鱼肉瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\川贝枇杷叶炖鳄鱼肉瘦肉汤-0000.png"
+                                            alt="川贝枇杷叶炖鳄鱼肉瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">川贝枇杷叶炖鳄鱼肉瘦肉汤</h1>
+                                    <span class="projectcat redtxt">小儿咳嗽，白天少咳，一睡到床上就开始咳，中医认为寒咳，可饮此汤</span>
+                                    <span class="cailiao">川贝1钱、枇杷叶4个、鳄鱼肉6两、瘦肉4两</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将川贝和枇杷叶洗净备用将鳄鱼肉和瘦肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的川贝和枇杷叶转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 丹参 脾 丹参四鸡炖冰糖 活血 化瘀 清热 解毒">
+                            <a href="#丹参四鸡炖冰糖" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">丹参四鸡炖冰糖</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\丹参四鸡炖冰糖-0000.png" alt="丹参四鸡炖冰糖" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="丹参四鸡炖冰糖" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\丹参四鸡炖冰糖-0000.png" alt="丹参四鸡炖冰糖" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">丹参四鸡炖冰糖</h1>
+                                    <span class="projectcat redtxt">"大三阳"，肝功能不正常，适合饮此汤，或用溪黄草煲水溪黄草冲剂也可</span>
+                                    <span class="cailiao">丹参15克、田鸡300克、冰糖30克</span>
+                                    <span class="projectcat redtxt">禁忌：服用抗血小板聚集药物的心脏病者、孕妇、儿童
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将丹参洗净备用将鸡肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的丹参转小火慢炖2小时以上，直至鸡肉熟透最后加入冰糖，根据个人口味调节甜度即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 莲子 栗子 肾 栗子莲子猪腰汤 补肾 壮阳 滋阴 养血">
+                            <a href="#栗子莲子猪腰汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">栗子莲子猪腰汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\栗子莲子猪腰汤-0000.png" alt="栗子莲子猪腰汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="栗子莲子猪腰汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\栗子莲子猪腰汤-0000.png" alt="栗子莲子猪腰汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">栗子莲子猪腰汤</h1>
+                                    <span
+                                        class="projectcat redtxt">栗子性温味甘，能补肾强筋，养胃健脾，莲子养心，益肾，补脾，涩肠，有传统老药师认为，孕妇饮莲心莲须煲唐肉汤，胎儿出生后会皮肤较白，脾气较好</span>
+                                    <span class="cailiao">莲子30克、栗子60克、猪腰1对，猪骨300克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将栗子和莲子洗净备用将猪腰去膜切片备用将煲汤锅中加入清水，放入栗子、莲子和猪腰转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 北杏 百合 肺 鸭梨北杏鹅肉汤 滋阴 润肺 益气 养血">
+                            <a href="#鸭梨北杏鹅肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">鸭梨北杏鹅肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\鸭梨北杏鹅肉汤-0000.png" alt="鸭梨北杏鹅肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="鸭梨北杏鹅肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\鸭梨北杏鹅肉汤-0000.png" alt="鸭梨北杏鹅肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">鸭梨北杏鹅肉汤</h1>
+                                    <span
+                                        class="projectcat redtxt">鹅肉有养胃止渴，补气生津，解五脏之热功效，此汤有清热润肺，化痰止咳，且有补虚之功，对久咳不止，燥热郁肺之慢性支气管炎，有辅助治疗作用</span>
+                                    <span class="cailiao">北杏12克、鸭梨2个、百合45克、鹅肉500克</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将鸭梨去皮去核切块备用将北杏洗净备用将鹅肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入鸭梨和北杏转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 黑豆 浮小麦 熟地 陈皮 脾 肾 浮小麦黑豆生蚝汤 健脾 消食 益肾 壮阳">
+                            <a href="#浮小麦黑豆生蚝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">浮小麦黑豆生蚝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\浮小麦黑豆生蚝汤-0000.png" alt="浮小麦黑豆生蚝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="浮小麦黑豆生蚝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\浮小麦黑豆生蚝汤-0000.png" alt="浮小麦黑豆生蚝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">浮小麦黑豆生蚝汤</h1>
+                                    <span
+                                        class="projectcat redtxt">蚝肉富含各种微量元素，能增强儿童的智力发育，故有"益智海鲜""海牛奶"的美称，熟地能滋阴养血，桂圆能养心安神，黑豆养颜乌发，浮小麦益气除热，止自汗盗汗</span>
+                                    <span class="cailiao">黑豆50克、浮小麦25克、熟地15克、生蚝肉500克、桂圆10克、猪展肉300克、姜3片、陈皮1/4个</span>
+                                    <span class="projectcat redtxt">禁忌：阴阳两虚所致的自汗或盗汗者、无汗烦躁者、汗出虚脱者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将浮小麦、黑豆和生蚝洗净备用将煲汤锅中加入清水，放入浮小麦、黑豆和生蚝转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 芡实 淮山 脾 肾 核桃淮山芡实猪展汤 补肾 养血 健脾 益气">
+                            <a href="#核桃淮山芡实猪展汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">核桃淮山芡实猪展汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\核桃淮山芡实猪展汤-0000.png" alt="核桃淮山芡实猪展汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="核桃淮山芡实猪展汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\核桃淮山芡实猪展汤-0000.png"
+                                            alt="核桃淮山芡实猪展汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">核桃淮山芡实猪展汤</h1>
+                                    <span
+                                        class="projectcat redtxt">有补肾固精，温肺止咳，益气养血，补脑益智，润肠通便，润燥化痰，补肝乌发的作用，对劳累或运动过度引起的肌膜炎有治疗作用</span>
+                                    <span class="cailiao">芡实50克、核桃100克、淮山25克、猪展肉400克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：遗精者、哺乳期妇女、肝火旺者、胸闷者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将核桃、淮山和芡实洗净备用将猪展洗净备用将煲汤锅中加入清水，放入核桃、淮山、芡实和猪展转小火慢炖2小时以上，直至肉熟软入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 北芪 南枣 心 脾 北芪南枣黄鳝汤 益气 补血 滋阴 润燥">
+                            <a href="#北芪南枣黄鳝汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">北芪南枣黄鳝汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\北芪南枣黄鳝汤-0000.png" alt="北芪南枣黄鳝汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="北芪南枣黄鳝汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\北芪南枣黄鳝汤-0000.png" alt="北芪南枣黄鳝汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">北芪南枣黄鳝汤</h1>
+                                    <span
+                                        class="projectcat redtxt">黄鳝所含特种物质"鳝鱼素"能降低血糖和调解血糖，对糖尿病有较好的治疗作用，用补气和旺血的北芪南枣煲汤能暖脾胃，旺气血，补虚损</span>
+                                    <span class="cailiao">北芪20克、南枣8个、黄鳝500克、猪展肉300克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：腹胀者、 风热咳嗽者
+                                        、感冒者、表实邪盛者、气滞湿阻者、食积停滞者、痈疽初起者、溃后热毒尚盛者、阴虚阳亢者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将北芪和南枣洗净备用将黄鳝去鳞、去内脏后切段备用将煲汤锅中加入清水，放入北芪、南枣和黄鳝转小火慢炖1小时以上，直至鳝鱼熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 无花果 姜 脾 肺 肾 无花果茶树菇山鸡汤 润肺 止咳 益肾 健脾">
+                            <a href="#无花果茶树菇山鸡汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">无花果茶树菇山鸡汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\无花果茶树菇山鸡汤-0000.png" alt="无花果茶树菇山鸡汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="无花果茶树菇山鸡汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\无花果茶树菇山鸡汤-0000.png"
+                                            alt="无花果茶树菇山鸡汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">无花果茶树菇山鸡汤</h1>
+                                    <span class="projectcat redtxt">有益胃健脾，养阴益气的功效，无花果健胃益气，茶树菇助消化，健肠胃</span>
+                                    <span class="cailiao">茶树菇150克、无花果5个、红枣3个、山鸡1只，姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：脾胃虚弱者、拉肚子者、糖尿病者、高血脂者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将无花果切块备用将茶树菇和山鸡洗净备用将煲汤锅中加入清水，放入无花果、茶树菇和山鸡转小火慢炖2小时以上，直至山鸡肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 淡菜 姜 心 脾 芋干瘦肉汤 补脾 健胃 益气 滋阴">
+                            <a href="#芋干瘦肉汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">芋干瘦肉汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\芋干瘦肉汤-0000.png" alt="芋干瘦肉汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="芋干瘦肉汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\芋干瘦肉汤-0000.png" alt="芋干瘦肉汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">芋干瘦肉汤</h1>
+                                    <span class="projectcat redtxt">有益胃宽肠，调节中气，化痰能便，益髓健脾之功效</span>
+                                    <span class="cailiao">芋干100克、淡菜40克、瘦肉500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：无</span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将芋干洗净备用将瘦肉切块，放入煲汤锅中加入清水，待水开后撇去浮沫，再放入洗净的芋干转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 北菇 脾 肺 原盅炖北菇 滋阴 润肺 清热 解毒">
+                            <a href="#原盅炖北菇" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">原盅炖北菇</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\原盅炖北菇-0000.png" alt="原盅炖北菇" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="原盅炖北菇" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\原盅炖北菇-0000.png" alt="原盅炖北菇" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">原盅炖北菇</h1>
+                                    <span
+                                        class="projectcat redtxt">北菇含丰富蛋白质，粗纤维和维生素能增强机体对肿瘤的免疫力，能刺激机体产生一种干扰素，可干扰带病毒的蛋白质合成，北菇中丰富的各种酶素，可帮助人体协调新陈代谢</span>
+                                    <span class="cailiao">北菇40克、鸡骨40克、葱1条、姜2片</span>
+                                    <span class="projectcat redtxt">禁忌：过敏者、体质偏寒者、脾胃虚弱者、湿热体质者、痛风者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将北菇泡发备用将煲汤锅中加入清水，放入泡发后的北菇转小火慢炖2小时以上，直至北菇入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 杜仲 肾 杜仲肉菘蓉煲猪骨汤 补肾 壮阳 强筋 健骨">
+                            <a href="#杜仲肉菘蓉煲猪骨汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">杜仲肉菘蓉煲猪骨汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\杜仲肉菘蓉煲猪骨汤-0000.png" alt="杜仲肉菘蓉煲猪骨汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="杜仲肉菘蓉煲猪骨汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\杜仲肉菘蓉煲猪骨汤-0000.png"
+                                            alt="杜仲肉菘蓉煲猪骨汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">杜仲肉菘蓉煲猪骨汤</h1>
+                                    <span
+                                        class="projectcat redtxt">作用是健筋骨，杜仲补肝肾，强筋骨，用于肾虚腰痛，筋骨无力，肉菘蓉具有滋肾壮阳，补益精血作用，有沙莫人参的美称，对腰椎患者有很好的食疗作用</span>
+                                    <span class="cailiao">杜仲45克、肉菘蓉30克、猪骨300克</span>
+                                    <span class="projectcat redtxt">禁忌：感冒发烧者、阴肝火旺者、大便长期烂者、易拉肚子者、热结便秘者、阴虚火旺者、热病者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将杜仲、肉菘和猪骨洗净备用将煲汤锅中加入清水，放入杜仲、肉菘和猪骨转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 莲藕 姜 脾 莲藕红豆白鸽汤 清热 利水 健脾 和胃">
+                            <a href="#莲藕红豆白鸽汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">莲藕红豆白鸽汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\莲藕红豆白鸽汤-0000.png" alt="莲藕红豆白鸽汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="莲藕红豆白鸽汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\莲藕红豆白鸽汤-0000.png" alt="莲藕红豆白鸽汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">莲藕红豆白鸽汤</h1>
+                                    <span
+                                        class="projectcat redtxt">莲藕生津止渴，清热除烦，养胃消食，养心生血，调气舒郁，补心补虚，白鸽补中益气，滋阴养肾，鱿鱼干补血敛阴补肝强肾，红豆养血和气利水除湿，红枣补气补血健脾胃</span>
+                                    <span class="cailiao">莲藕750克、鱿鱼干50克、红豆50克、白鸽2只、姜3片、红枣6个</span>
+                                    <span
+                                        class="projectcat redtxt">禁忌：对莲藕、红豆或白鸽过敏的者、脾胃虚寒者、痛风急性发作期患者、消化功能不佳者、便秘者、痔疮患者、身体虚弱者、发热者、糖尿病者、孕妇
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将莲藕和红豆洗净备用将白鸽去毛、去内脏后洗净备用将煲汤锅中加入清水，放入莲藕、红豆和白鸽转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 霸王花 姜 肾 新鲜霸王花猪展汤 益肾 壮阳 补虚 益精">
+                            <a href="#新鲜霸王花猪展汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">新鲜霸王花猪展汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\新鲜霸王花猪展汤-0000.png" alt="新鲜霸王花猪展汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="新鲜霸王花猪展汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\新鲜霸王花猪展汤-0000.png" alt="新鲜霸王花猪展汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">新鲜霸王花猪展汤</h1>
+                                    <span
+                                        class="projectcat redtxt">霸王花又名剑花，生味甘凉，归肺、胃经、有清热痰，除积热之功，用来煲猪肺，可以清肺热，养肺气，消肠积滞，除口气臭秽的作用</span>
+                                    <span class="cailiao">鲜霸王花400克、红枣6个、猪展500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：对霸王花过敏者、体质偏寒者、体质偏热者、孕妇、哺乳期女性
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将新鲜霸王花洗净备用将猪展洗净备用将煲汤锅中加入清水，放入新鲜霸王花和猪展转小火慢炖2小时以上，直至肉熟软入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 核桃 白果 莲子 肺 肾 大肠 核桃淡菜番鸭汤 润肺 止咳 滋阴 养血">
+                            <a href="#核桃淡菜番鸭汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">核桃淡菜番鸭汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\核桃淡菜番鸭汤-0000.png" alt="核桃淡菜番鸭汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="核桃淡菜番鸭汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\核桃淡菜番鸭汤-0000.png" alt="核桃淡菜番鸭汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">核桃淡菜番鸭汤</h1>
+                                    <span class="projectcat redtxt">番鸭性平凉味甘咸，能补中益气，温中暖下，此汤有补肾纳精，聚气强阳作用</span>
+                                    <span class="cailiao">核桃8个、白果50克、莲子50克、淡菜100克、红枣5个，番鸭肉500克</span>
+                                    <span class="projectcat redtxt">禁忌：过敏者、胃肠道疾病者、肾炎者、肾衰竭者、痛风者、肝炎者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将核桃砸碎备用将淡菜洗净泡软备用将番鸭去毛洗净备用将煲汤锅中加入清水，放入核桃、淡菜和番鸭转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 党参 茨实 北芪 淮山 心 脾 肾 党参北芪茨实淮山煲瘦肉 补气 养血 健脾 益肾">
+                            <a href="#党参北芪茨实淮山煲瘦肉" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">党参北芪茨实淮山煲瘦肉</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\党参北芪茨实淮山煲瘦肉-0000.png" alt="党参北芪茨实淮山煲瘦肉" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="党参北芪茨实淮山煲瘦肉" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\党参北芪茨实淮山煲瘦肉-0000.png"
+                                            alt="党参北芪茨实淮山煲瘦肉" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">党参北芪茨实淮山煲瘦肉</h1>
+                                    <span class="projectcat redtxt">对春秋季经常喉咙痛，冬季经常感冒，咳嗽有保健治疗作用</span>
+                                    <span class="cailiao">党参30克、茨实15克、北芪10克、淮山30克、瘦肉500克</span>
+                                    <span class="projectcat redtxt">禁忌：过敏体质者、湿热体质者、消化不良者、慢性疾病者、孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将党参、北芪、茨实和淮山洗净备用根据选择的肉类（瘦肉或山斑鱼），将肉类和药材放入煲汤锅中，加入适量清水转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 芜茜 姜 脾 萝卜滚鳕鱼汤 清热 解毒 利水 消肿">
+                            <a href="#萝卜滚鳕鱼汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">萝卜滚鳕鱼汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\萝卜滚鳕鱼汤-0000.png" alt="萝卜滚鳕鱼汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="萝卜滚鳕鱼汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\萝卜滚鳕鱼汤-0000.png" alt="萝卜滚鳕鱼汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">萝卜滚鳕鱼汤</h1>
+                                    <span class="projectcat redtxt">萝卜有顺气消食，生津开胃，润肺化痰，养血润肤，助消化，鳕鱼滋阴养血补肾益精</span>
+                                    <span class="cailiao">萝卜500克、鳕鱼300克、姜3片、芜茜2棵、葱2棵</span>
+                                    <span class="projectcat redtxt">禁忌：海鲜过敏者、消化不良者、肾脏疾病者、服用特定药物者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将萝卜去皮切块备用将鳕鱼洗净备用将煲汤锅中加入清水，放入萝卜和鳕鱼转小火滚煮30分钟以上，直至鱼肉熟透根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 枝竹 白果 芡实 肺 白果枝竹冬瓜老鸭汤 清热 利湿 滋阴 润肺">
+                            <a href="#白果枝竹冬瓜老鸭汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">白果枝竹冬瓜老鸭汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\白果枝竹冬瓜老鸭汤-0000.png" alt="白果枝竹冬瓜老鸭汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="白果枝竹冬瓜老鸭汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\白果枝竹冬瓜老鸭汤-0000.png"
+                                            alt="白果枝竹冬瓜老鸭汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">白果枝竹冬瓜老鸭汤</h1>
+                                    <span
+                                        class="projectcat redtxt">中医认为秋日宜多饮用白果煲的汤水，因其有敛肺气，定咳喘的作用，有降低血清胆固醇，扩张冠状动脉的作用，对冠心病，高血压，动脉硬化有一定治疗作用，还可肺结核、气管炎、赤白带下，遗尿等，配伍枝竹冬瓜煲老鸭润肺气，养阴气</span>
+                                    <span class="cailiao">枝竹100克、白果100克、冬瓜1000克、老鸭1只、芡实20克、姜3片、陈皮1/4块</span>
+                                    <span class="projectcat redtxt">禁忌：过敏体质者、湿热体质者、消化不良者、高脂血症者、肥胖者、肾病者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将白果、枝竹和冬瓜洗净备用将老鸭去毛、去内脏后洗净备用将煲汤锅中加入清水，放入白果、枝竹、冬瓜和老鸭转小火慢炖2小时以上，直至汤汁浓郁根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 姜 肺 蜜瓜海螺老鸡汤 清热 解毒 滋阴 润肺">
+                            <a href="#蜜瓜海螺老鸡汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">蜜瓜海螺老鸡汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\蜜瓜海螺老鸡汤-0000.png" alt="蜜瓜海螺老鸡汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="蜜瓜海螺老鸡汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\蜜瓜海螺老鸡汤-0000.png" alt="蜜瓜海螺老鸡汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">蜜瓜海螺老鸡汤</h1>
+                                    <span class="projectcat redtxt">据说是邵逸夫的心水养生汤，能滋补肝肾润五脏养容颜女士喝有美容滋润的效果</span>
+                                    <span class="cailiao">鲜海螺肉250克、蜜瓜250克、老鸡1只、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：海鲜过敏者、消化系统疾者、痛风者、体质虚弱者、脾胃虚寒者、孕妇、哺乳期妇女
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将蜜瓜去皮去籽切块备用将海螺和老鸡洗净备用将煲汤锅中加入清水，放入蜜瓜、海螺和老鸡转小火慢炖2小时以上，直至肉类煮烂入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 江珧柱 冬虫草  姜 心 脾 肾 冬虫草珧柱猪展汤 滋阴 补肾 益气 养血">
+                            <a href="#冬虫草珧柱猪展汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">冬虫草珧柱猪展汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\冬虫草珧柱猪展汤-0000.png" alt="冬虫草珧柱猪展汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="冬虫草珧柱猪展汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\冬虫草珧柱猪展汤-0000.png" alt="冬虫草珧柱猪展汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">冬虫草珧柱猪展汤</h1>
+                                    <span class="projectcat redtxt">适合"大雪"气节冬令进补</span>
+                                    <span class="cailiao">江珧柱6个、冬虫草15克、猪展500克、姜3片</span>
+                                    <span class="projectcat redtxt">禁忌：湿热体质者、消化不良、感冒发热、肾病者、高血压者、儿童、孕妇
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将冬虫草和珧柱洗净备用将猪展洗净备用将煲汤锅中加入清水，放入冬虫草、珧柱和猪展转小火慢炖2小时以上，直至肉熟软入味根据个人口味适量加入盐调味即可
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+
+
+                        <div class="tile medium 眉豆 陈皮 心 脾 眉豆花生红枣猪尾汤 补脾 益气 滋阴 养血">
+                            <a href="#眉豆花生红枣猪尾汤" class="lightbox" rel="section">
+                                <div class="pl-projecttitle"><span class="pl-title">眉豆花生红枣猪尾汤</span></div>
+                                <img class="tile-pre-img" src=".\images\药膳图\眉豆花生红枣猪尾汤-0000.png" alt="眉豆花生红枣猪尾汤" />
+                            </a>
+                        </div>
+                        <!-- 对应弹窗 -->
+                        <div class="tile-pre">
+                            <article id="眉豆花生红枣猪尾汤" class="lb-portfolio">
+                                <a>
+                                    <div class="portfolio-img">
+                                        <img class="tile-pre-img" src=".\images\药膳图\眉豆花生红枣猪尾汤-0000.png"
+                                            alt=眉豆花生红枣猪尾汤" />
+                                    </div>
+                                </a>
+                                <div class="lb-port-cont">
+                                    <h1 class="lb-project">眉豆花生红枣猪尾汤</h1>
+                                    <span
+                                        class="projectcat redtxt">眉豆性平味甘、淡，有健脾除湿困祛脚气，和中益气的作用，花生健脾养胃，红枣能养血气，健脾胃，猪尾能壮骨益髓，合而为汤，能祛湿困，养脾胃</span>
+                                    <span class="cailiao">眉豆150克、花生50克、红枣5个、猪尾750克、姜3片、陈皮1/4个</span>
+                                    <span class="projectcat redtxt">禁忌：肠胃虚弱者、对眉豆、花生或红枣过敏者、痛风者、肾病者、糖尿病者、消化不良者
+                                    </span>
+                                    <div class="lb-desc">
+                                        <p>
+                                        <h5>做法</h5>
+                                        将眉豆、花生、红枣和猪尾准备好，并洗净备用将煲汤锅中加入适量清水，放入猪尾、眉豆、花生和红枣置于火上，大火煮沸后转小火慢炖2-3小时，直至汤汁浓郁，猪尾肉烂熟，眉豆、花生和红枣熟透根据个人口味适量加入盐调味即可最后，将炖好的眉豆花生红枣猪尾汤盛入碗中，热气腾腾，香气四溢，享用美味汤品
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- ENDimages\药膳图 -->
+
+
+
+
+
+
+                    </div><!-- end #portfolio -->
+                    <!-- END TILE CONTENT -->
+                    <!-- BEGIN PAGINATION -->
+                    <div class="pagination clearfix">
+                        <span class="pages">Page 1 of 1</span>
+                        <span class="current">1</span>
+
+                        <a href="#" class="nextpagelink">&raquo;</a>
+                    </div>
+
+                </section>
+
+            </section>
+            <!-- END CONTENT -->
+
+
+
+        </section><!-- end #container -->
+    </div>
+
+</body>
+
+</html>

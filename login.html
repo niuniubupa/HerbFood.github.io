@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+    <link rel="stylesheet" type="text/css" href="./css/denglu.css">
+    <style>
+        body {
+            background-image: url("./images/02.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <script src="./scripts/denglu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Mock user database
+            const users = [
+                { username: "user1", password: "password1" },
+                { username: "user2", password: "password2" }
+                // Add more users if needed
+            ];
+
+            // Registration Button Click Event
+            document.getElementById("zhuce").addEventListener("click", function () {
+                const username = document.getElementById("zhanghao1").value;
+                const password = document.getElementById("mima1").value;
+                const confirmPassword = document.getElementById("queren").value;
+
+                if (username.trim() === "") {
+                    alert("请输入用户名。");
+                    return;
+                } else if (localStorage.getItem(username) !== null) {
+                    alert("该用户名已被注册，请选择另一个用户名。");
+                    return;
+                } else if (password.trim() === "" || confirmPassword.trim() === "") {
+                    alert("请输入密码和确认密码。");
+                    return;
+                } else if (password !== confirmPassword) {
+                    alert("密码与确认密码不匹配。");
+                    return;
+                } else {
+                    localStorage.setItem(username, password);
+                    alert("注册成功");
+                }
+            });
+
+            // Login Button Click Event
+            document.getElementById("denglu").addEventListener("click", function () {
+                const username = document.getElementById("zhanghao2").value;
+                const password = document.getElementById("mima2").value;
+
+                // Check if the entered credentials are empty
+                if (username.trim() === "" || password.trim() === "") {
+                    alert("请输入用户名和密码。");
+                    return;
+                }
+
+                // Check if the entered credentials match any user
+                if (localStorage.getItem(username) === password) {
+                    alert("登录成功");
+                    window.location.href = "index.html?source=login"
+                } else {
+                    alert("用户名或密码错误，请重新输入。");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box right-panel-active">
+        <div class="box_form box--signin">
+            <div class="form" id="form1">
+                <h2 class="form_title">账号注册</h2>
+                <input type="text" placeholder="账号" class="input" id="zhanghao1">
+                <input type="password" placeholder="密码" class="input" id="mima1">
+                <input type="password" placeholder="确认密码" class="input" id="queren">
+                <input type="button" class="btn" value="点击注册" id="zhuce">
+            </div>
+        </div>
+
+        <div class="box_form box--signup">
+            <div class="form" id="form2">
+                <h2 class="form_title">欢迎登陆</h2>
+                <input type="text" placeholder="账号" class="input" id="zhanghao2">
+                <input type="password" placeholder="密码" class="input" id="mima2">
+                <a onclick="alert('请联系管理员更改')" class="link" href="#">忘记密码</a>
+                <input type="button" class="btn" value="登录" id="denglu">
+            </div>
+        </div>
+
+        <div class="box_overlay">
+            <div class="overlay">
+                <div class="overlay_panel overlay--left">
+                    <input type="button" class="btn" value="没有账号，点击注册" id="signin">
+                </div>
+                <div class="overlay_panel overlay--right">
+                    <input type="button" class="btn" value="已有账号，点击登录" id="signup">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

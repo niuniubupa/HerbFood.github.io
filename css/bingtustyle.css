@@ -1,0 +1,186 @@
+/*-------------------------------饼图------------------------------*/
+
+
+.box {
+    width: 1000px;
+    height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.18), rgba(238, 228, 192, 0.91));
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+
+
+
+#myChart {
+    width: 850px;
+    height: 640px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/*-------------------------------Search Box------------------------------*/
+#search1 {
+    /*右边距离*/
+    transform: translate(-15%, -15%);
+
+    background: rgba(213, 107, 57, 0.44);
+    border-radius: 40px;
+    padding: 20px;
+
+    /* 搜索盒子中元素居中 */
+    align-items: center;
+
+    /* 盒子初始宽高 40px  正好包裹内部的.search-btn*/
+
+    right: auto;
+    top: -600px;
+
+    height: 30px;
+    width: 240px;
+
+    /* 宽度变化贝塞尔曲线 */
+    transition: width cubic-bezier(0.68, -0.25, 0.27, 1.55) .8s;
+
+
+
+}
+
+/***********推荐搜索框样式***********/
+.autocomplete-list {
+    border-radius: 15px;
+    /* 设置圆角 */
+
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+
+
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    z-index: 99;
+
+
+    text-align: left;
+    font-size: 16px;
+    top: 100%;
+}
+
+.autocomplete-list div {
+
+    padding: 10px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.autocomplete-list {
+    width: 85%;
+}
+
+.autocomplete-list div:hover {
+
+    background-color: rgba(255, 177, 113, 0.61);
+}
+
+/*************************************************************/
+
+.search-btn {
+
+    /* 固定定位 */
+    position: fixed;
+    /* 放在search-box的右边20px处*/
+    right: 20px;
+
+    /* 其内部的搜索突变flex布局 会保持在中央*/
+    display: flex;
+    justify-content: center;
+    /* 少了这个就不能垂直居中了  */
+    align-items: center;
+
+    /* btn的大小 */
+    width: 40px;
+    height: 40px;
+
+    /* 圆形边缘 */
+    border-radius: 50%;
+    background: #ffffff;
+    border-bottom: none;
+    /* 其他样式 */
+    background-image: url('../images/search.svg');
+    /* 设置背景图片 */
+    background-repeat: no-repeat;
+    /* 防止背景图片重复 */
+    background-position: center;
+    /* 将背景图片置于中心 */
+    background-size: 50%;/
+}
+
+.image {
+    animation: floating-animation 1s infinite;
+}
+
+/* 设置<a>中嵌套icon的大小和<a>一致 */
+.search-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* 设置输入框 */
+.search-text {
+    /* 设置左浮动 所以会跟在外面的search-box的左侧移动 */
+    float: left;
+    padding: 0;
+    line-height: 35px;
+    max-inline-size: 200px;
+
+    /* 初始宽度为0 整个search-box的大小为40px*40px */
+    width: 200px;
+
+    /* 去除默认输入框的背景、描边、边框 该！！！！*/
+    background: none;
+    outline: none;
+    border: none;
+
+    /* 添加白色下划线 */
+    border-bottom: #bdc3c7 2px solid;
+    /*//把下划线往上挪一点*/
+    margin-top: -2px;
+
+
+    /* 字体颜色、大小 */
+    color: white;
+    font-size: 16px;
+
+
+}
+
+
+
+@keyframes floating-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* 将动画应用于搜索按钮 */
+.search-btn {
+    animation: floating-animation 1s infinite;
+}

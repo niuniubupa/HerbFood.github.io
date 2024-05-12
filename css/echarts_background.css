@@ -1,0 +1,23 @@
+.box {
+    width: 1000px;
+    height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.18), rgba(238, 228, 192, 0.91));
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+
+
+
+#myChart {
+    width: 1000px;
+    height: 640px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    z-index: 1;
+}
